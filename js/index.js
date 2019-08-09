@@ -61,3 +61,18 @@ $('#brandShip').on('mouseover', 'li', function () {
     $(this).children().children().children(".brand_hide").css("top","100px")
 })
 
+// 热门旗舰店
+$(".hotflagson").on("mouseover","div",function(){
+    $(this).children(".hotmiddle").css("opacity","1")
+    $(this).children(".topline").css("width","166px")
+    $(this).children(".bottomline").css("width","166px")
+    $(this).children(".rightline").css("height","85px")
+    $(this).children(".leftline").css("height","85px")
+}).on('mouseout', 'li', function () {
+    $(this).children(".hotmiddle").css("opacity","0")
+    $(this).children(".topline").css("width",0)
+    $(this).children(".bottomline").css("width",0)
+    $(this).children(".rightline").css("height",0)
+    $(this).children(".leftline").css("height",0)
+    
+})

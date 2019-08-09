@@ -1125,13 +1125,88 @@ main.content .hotstore ul > li > div.hotflagson {
   margin-bottom: 7px;
 }
 
-main.content .hotstore ul > li > div.hotflagson img {
+main.content .hotstore ul > li > div.hotflagson > img {
   width: 107px;
   height: 54px;
 }
 
 main.content .hotstore ul > li > div.hotflagson:nth-child(7n) {
   margin-right: 0;
+}
+
+main.content .hotstore ul > li > div.hotflagson .hotmiddle {
+  position: absolute;
+  left: 29px;
+  top: 14px;
+  opacity: 0;
+  width: 107px;
+  height: 42px;
+  padding-top: 12px;
+  background: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main.content .hotstore ul > li > div.hotflagson .hotmiddle .brandchnname {
+  font-size: 18px;
+  text-align: center;
+}
+
+main.content .hotstore ul > li > div.hotflagson .hotmiddle .blacksline {
+  text-align: center;
+  margin-top: 5px;
+}
+
+main.content .hotstore ul > li > div.hotflagson .hotmiddle .blacksline span {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  vertical-align: top;
+}
+
+main.content .hotstore ul > li > div.hotflagson .topline {
+  width: 0;
+  height: 1px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  background: #000;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main.content .hotstore ul > li > div.hotflagson .rightline {
+  width: 1px;
+  height: 0;
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  background: #000;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main.content .hotstore ul > li > div.hotflagson .bottomline {
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  background: #000;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main.content .hotstore ul > li > div.hotflagson .leftline {
+  width: 1px;
+  height: 0;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  background: #000;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 main.content div.lifestyle ul li {

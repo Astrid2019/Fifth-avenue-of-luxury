@@ -109,11 +109,17 @@ a:hover {
   margin: 0 auto;
 }
 
+html, body {
+  height: 100%;
+}
+
 /* 广告 */
 .ad_top {
   width: 100%;
   height: 80px;
   background: #4200de;
+  position: relative;
+  z-index: 100;
 }
 
 .ad_top img {
@@ -344,20 +350,24 @@ a:hover {
 /* 搜索 */
 div.search {
   height: 110px;
-  position: relative;
   z-index: 99;
+  background: #fff;
 }
 
-div.search h1 {
+div.search .content {
+  position: relative;
+}
+
+div.search .content h1 {
   width: 244px;
   height: 110px;
 }
 
-div.search h1 img {
+div.search .content h1 img {
   width: 100%;
 }
 
-div.search h2 {
+div.search .content h2 {
   width: 142px;
   height: 80px;
   margin-top: 14px;
@@ -365,18 +375,18 @@ div.search h2 {
   margin-right: 55px;
 }
 
-div.search .search_center {
+div.search .content .search_center {
   margin-top: 36px;
 }
 
-div.search .search_center form {
+div.search .content .search_center form {
   width: 343px;
   padding: 2px 2px;
   background: #c69c6d;
   height: 34px;
 }
 
-div.search .search_center form input {
+div.search .content .search_center form input {
   width: 260px;
   height: 34px;
   line-height: 34px;
@@ -387,7 +397,7 @@ div.search .search_center form input {
   float: left;
 }
 
-div.search .search_center form button {
+div.search .content .search_center form button {
   width: 80px;
   height: 34px;
   border: none;
@@ -397,7 +407,7 @@ div.search .search_center form button {
   background: none;
 }
 
-div.search .search_center ul li {
+div.search .content .search_center ul li {
   float: left;
   color: #999;
   font-size: 12px;
@@ -405,14 +415,13 @@ div.search .search_center ul li {
   line-height: 32px;
 }
 
-div.search .search_center ul li a:hover {
+div.search .content .search_center ul li a:hover {
   color: #d00000;
 }
 
-div.search h3 {
+div.search .content h3 {
   position: absolute;
   top: 35px;
-  z-index: -1;
   right: 123px;
   width: 200px;
   height: 30px;
@@ -421,14 +430,14 @@ div.search h3 {
   transition: 1.5s;
 }
 
-div.search .shoppingCart {
+div.search .content .shoppingCart {
   width: 290px;
   position: relative;
   margin-top: 35px;
   z-index: 99;
 }
 
-div.search .shoppingCart .cartImg {
+div.search .content .shoppingCart .cartImg {
   width: 94px;
   height: 32px;
   line-height: 32px;
@@ -442,17 +451,17 @@ div.search .shoppingCart .cartImg {
   background: url(../images/brandstore_share.png) no-repeat -376px -405px;
 }
 
-div.search .shoppingCart .cartImg img {
+div.search .content .shoppingCart .cartImg img {
   position: absolute;
   left: 10px;
   top: 2px;
 }
 
-div.search .shoppingCart .cartImg span {
+div.search .content .shoppingCart .cartImg span {
   color: #d00000;
 }
 
-div.search .shoppingCart .cartNotice {
+div.search .content .shoppingCart .cartNotice {
   display: none;
   clear: both;
   width: 268px;
@@ -468,7 +477,7 @@ div.search .shoppingCart .cartNotice {
   top: 34px;
 }
 
-div.search .shoppingCart em {
+div.search .content .shoppingCart em {
   width: 94px;
   height: 3px;
   display: none;
@@ -479,18 +488,27 @@ div.search .shoppingCart em {
   z-index: 1;
 }
 
+div.masking {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 88;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  background: black;
+  opacity: 0.5;
+}
+
 /* 导航 */
 nav {
   position: relative;
-  z-index: 2;
+  z-index: 95;
   width: 100%;
   height: 38px;
   background: url(../images/navi_1pxbg.png) repeat-x;
   vertical-align: middle;
-  box-shadow: 0 4px 4px #c7c6c6;
-  -o-box-shadow: 0 4px 4px #c7c6c6;
-  -moz-box-shadow: 0 4px 4px #c7c6c6;
-  -webkit-box-shadow: 0 4px 4px #c7c6c6;
+  border-bottom: solid rgba(0, 0, 0, 0.3) 2px;
 }
 
 nav ul.fl > li {
@@ -516,25 +534,25 @@ nav ul.fl > li:first-child > a {
 
 nav ul.fl > li:first-child > div.drop_down {
   width: 130px;
-  /* display: none; */
+  display: none;
   min-height: 585px;
   position: relative;
   z-index: 100;
   vertical-align: top;
 }
 
-nav ul.fl > li:first-child > div.drop_down > ul li {
+nav ul.fl > li:first-child > div.drop_down > ul > li {
   vertical-align: top;
   position: relative;
   width: 130px;
   z-index: 100;
-}
-
-nav ul.fl > li:first-child > div.drop_down > ul li .group {
   filter: alpha(opacity=85);
   -moz-opacity: 0.85;
   -khtml-opacity: 0.85;
   opacity: 0.85;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .group {
   height: 36px;
   text-align: left;
   line-height: 36px;
@@ -543,14 +561,139 @@ nav ul.fl > li:first-child > div.drop_down > ul li .group {
   padding-left: 48px;
 }
 
-nav ul.fl > li:first-child > div.drop_down > ul li .group i {
+nav ul.fl > li:first-child > div.drop_down > ul > li .group i {
   position: absolute;
   right: 2px;
-  top: 0;
-  height: 36px;
+  top: 2px;
+  height: 34px;
   width: 20px;
   display: none;
   background: url(../images/share02.png) no-repeat -304px -33px;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show {
+  width: 800px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 130px;
+  top: 0px;
+  min-height: 220px;
+  display: none;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show h2 {
+  float: left;
+  color: #CF0201;
+  width: 105px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 25px;
+  text-align: left;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show h2 a {
+  color: #CF0201;
+  font-weight: bold;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .showshop {
+  background-color: #fff;
+  min-width: 605px;
+  max-width: 750px;
+  border-bottom: #d7d7d7 1px solid;
+  margin: 10px 0px 10px 20px;
+  float: left;
+  clear: both;
+  overflow: hidden;
+  line-height: 25px;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .showshop .showbag {
+  max-width: 500px;
+  min-height: 25px;
+  line-height: 25px;
+  float: left;
+  display: block;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .showshop .showbag a {
+  color: #757272;
+  font-size: 12px;
+  float: left;
+  margin-right: 10px;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .showindex {
+  float: left;
+  padding-left: 25px;
+  width: 590px;
+  height: 70px;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .showindex a {
+  display: block;
+  width: 115px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #cf0201;
+  margin-top: 20px;
+  float: left;
+  margin-left: 20px;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .beauty {
+  float: left;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .beauty .beautytop {
+  border-bottom: #d7d7d7 1px solid;
+  margin: 10px 0px 0px 20px;
+  float: left;
+  width: 100%;
+  line-height: 23px;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .beauty .beautytop .show {
+  width: 560px;
+  float: left;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .beauty .beautytop .show .show_part {
+  float: left;
+  width: 50%;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .beauty .beautytop .show .show_part h3 {
+  font-style: normal;
+  text-align: left;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .beauty .beautytop .show .show_part h3 a {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .beauty .beautytop .show .show_part ul {
+  line-height: normal;
+  text-align: left;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .beauty .beautytop .show .show_part ul li {
+  padding-right: 10px;
+  float: left;
+  color: #999999;
+  background: #fff;
+  border: 0px;
+  line-height: 24px;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul > li .menu_show .beauty .beautytop .show .show_part ul li a {
+  display: inline;
+  color: #999;
+  font-size: 12px;
 }
 
 nav ul.fl > li > a {
@@ -613,91 +756,181 @@ nav ul.fr > li:nth-child(3) a {
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(1) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -4px;
+  background-position-y: -3px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(1) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -3px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(2) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -36px;
+  background-position-y: -35px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(2) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -35px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(3) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -68px;
+  background-position-y: -67px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(3) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -67px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(4) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -100px;
+  background-position-y: -99px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(4) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -99px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(5) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -132px;
+  background-position-y: -131px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(5) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -131px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(6) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -164px;
+  background-position-y: -163px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(6) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -163px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(7) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -196px;
+  background-position-y: -195px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(7) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -195px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(8) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -228px;
+  background-position-y: -227px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(8) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -227px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(9) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -260px;
+  background-position-y: -259px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(9) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -259px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(10) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -292px;
+  background-position-y: -291px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(10) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -291px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(11) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -324px;
+  background-position-y: -323px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(11) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -323px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(12) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -356px;
+  background-position-y: -355px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(12) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -355px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(13) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -388px;
+  background-position-y: -387px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(13) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -387px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(14) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -420px;
+  background-position-y: -419px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(14) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -419px;
 }
 
 nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(15) > div.group {
   background: #fff url(../images/brand_category1.png) 15px no-repeat;
   background-position-x: -3px;
-  background-position-y: -452px;
+  background-position-y: -451px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(15) > div.group:hover {
+  background: #fff url(../images/brand_category2.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -451px;
 }
 
 nav > .content > a {
@@ -712,7 +945,7 @@ nav > .content > a {
 div.banner {
   height: 520px;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 div.banner img {

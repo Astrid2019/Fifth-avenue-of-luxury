@@ -6,6 +6,11 @@
 	margin: 0 auto;
 }
 
+@mixin twoProperties($w,$h){
+	width:$w;
+	height:$h;
+}
+
 /* 广告 */
 .ad_top {
 	width: 100%;
@@ -342,34 +347,70 @@ div.search {
 }
 
 /* 导航 */
-
 nav {
-	width: 100%;
-	height: 38px;
+	position: relative;
+	z-index:2;
+	@include twoProperties(100%,38px);
 	background: url(../images/navi_1pxbg.png) repeat-x;
 	vertical-align: middle;
 	box-shadow: 0 4px 4px #c7c6c6;
 	-o-box-shadow: 0 4px 4px #c7c6c6;
 	-moz-box-shadow: 0 4px 4px #c7c6c6;
 	-webkit-box-shadow: 0 4px 4px #c7c6c6;
-	ul.fl li {
+	ul.fl>li {
 		float: left;
-		z-index: 20;
+		z-index: 200;
 		font-size: 14px;
 		text-align: center;
-		height: 40px;
+		@include twoProperties(82px,40px);
 		line-height: 40px;
-		width: 82px;
 		&:first-child {
 			width: 130px;
-			a {
+			>a {
 				width: 130px;
 				background: url(../images/lux_index.png) -8px -215px no-repeat;
 				color: #fff;
 				font-weight: bold;
 			}
+			>div.drop_down{
+				width: 130px;
+				/* display: none; */
+				min-height: 585px;
+				position: relative;
+				z-index: 100;
+				vertical-align: top;
+				>ul li{
+					vertical-align: top;
+					position: relative;
+					width: 130px;
+					z-index: 100;
+					.group{
+    					filter: alpha(opacity=85);
+    					-moz-opacity: 0.85;
+    					-khtml-opacity: 0.85;
+    					opacity: 0.85;
+    					height: 36px;
+    					text-align: left;
+    					line-height: 36px;
+    					margin: 0 auto;
+    					position: relative;
+						padding-left: 48px;	
+						i{
+							position: absolute;
+							right: 2px;
+							top: 0;
+							height: 36px;
+							width: 20px;
+							display: none;
+							background: url(../images/share02.png) no-repeat -304px -33px;
+						}
+					}
+					
+				}
+			}
+
 		}
-		a {
+		>a {
 			height: 38px;
 			color: #c8a985;
 			&:hover {
@@ -395,10 +436,10 @@ nav {
 	}
 	ul.fr {
 		margin-right: 15px;
-		li {
+		>li {
 			float: left;
 			margin-right: 12px;
-			a {
+			>a {
 				width: 30px;
 				height: 40px;
 				line-height: 40px;
@@ -415,7 +456,13 @@ nav {
 				background-position: -354px -66px;
 			}
 		}
-		
+	}
+}
+@for $i from 1 through 15 {
+	nav .content ul.fl>li>div.drop_down>ul>li:nth-of-type(#{$i})>div.group {
+		background: #fff url(../images/brand_category1.png) 15px no-repeat;
+		background-position-x: -3px ;
+		background-position-y: (-(4 +( $i - 1)*32))+px;
 	}
 }
 nav>.content>a {
@@ -429,10 +476,13 @@ nav>.content>a {
 /*banner*/
 div.banner {
 	height: 520px;
+	position: relative;
+	z-index:1;
 	img {
 		width: 100%;
 		height: 520px;
 		margin: 0 auto;
+		z-index:99;
 	}
 }
 

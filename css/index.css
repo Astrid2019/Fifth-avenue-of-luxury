@@ -481,6 +481,8 @@ div.search .shoppingCart em {
 
 /* 导航 */
 nav {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 38px;
   background: url(../images/navi_1pxbg.png) repeat-x;
@@ -491,47 +493,86 @@ nav {
   -webkit-box-shadow: 0 4px 4px #c7c6c6;
 }
 
-nav ul.fl li {
+nav ul.fl > li {
   float: left;
-  z-index: 20;
+  z-index: 200;
   font-size: 14px;
   text-align: center;
+  width: 82px;
   height: 40px;
   line-height: 40px;
-  width: 82px;
 }
 
-nav ul.fl li:first-child {
+nav ul.fl > li:first-child {
   width: 130px;
 }
 
-nav ul.fl li:first-child a {
+nav ul.fl > li:first-child > a {
   width: 130px;
   background: url(../images/lux_index.png) -8px -215px no-repeat;
   color: #fff;
   font-weight: bold;
 }
 
-nav ul.fl li a {
+nav ul.fl > li:first-child > div.drop_down {
+  width: 130px;
+  /* display: none; */
+  min-height: 585px;
+  position: relative;
+  z-index: 100;
+  vertical-align: top;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul li {
+  vertical-align: top;
+  position: relative;
+  width: 130px;
+  z-index: 100;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul li .group {
+  filter: alpha(opacity=85);
+  -moz-opacity: 0.85;
+  -khtml-opacity: 0.85;
+  opacity: 0.85;
+  height: 36px;
+  text-align: left;
+  line-height: 36px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 48px;
+}
+
+nav ul.fl > li:first-child > div.drop_down > ul li .group i {
+  position: absolute;
+  right: 2px;
+  top: 0;
+  height: 36px;
+  width: 20px;
+  display: none;
+  background: url(../images/share02.png) no-repeat -304px -33px;
+}
+
+nav ul.fl > li > a {
   height: 38px;
   color: #c8a985;
 }
 
-nav ul.fl li a:hover {
+nav ul.fl > li > a:hover {
   color: #fff;
 }
 
-nav ul.fl li.fashion {
+nav ul.fl > li.fashion {
   position: relative;
   width: 77px;
   padding-right: 5px;
 }
 
-nav ul.fl li.fashion a {
+nav ul.fl > li.fashion a {
   text-align: right;
 }
 
-nav ul.fl li.fashion i {
+nav ul.fl > li.fashion i {
   position: absolute;
   left: 23px;
   top: 0;
@@ -544,12 +585,12 @@ nav ul.fr {
   margin-right: 15px;
 }
 
-nav ul.fr li {
+nav ul.fr > li {
   float: left;
   margin-right: 12px;
 }
 
-nav ul.fr li a {
+nav ul.fr > li > a {
   width: 30px;
   height: 40px;
   line-height: 40px;
@@ -557,16 +598,106 @@ nav ul.fr li a {
   background: url(../images/share02.png) no-repeat;
 }
 
-nav ul.fr li:nth-child(1) a {
+nav ul.fr > li:nth-child(1) a {
   background-position: -237px -66px;
 }
 
-nav ul.fr li:nth-child(2) a {
+nav ul.fr > li:nth-child(2) a {
   background-position: -296px -66px;
 }
 
-nav ul.fr li:nth-child(3) a {
+nav ul.fr > li:nth-child(3) a {
   background-position: -354px -66px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(1) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -4px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(2) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -36px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(3) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -68px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(4) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -100px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(5) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -132px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(6) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -164px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(7) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -196px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(8) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -228px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(9) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -260px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(10) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -292px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(11) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -324px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(12) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -356px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(13) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -388px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(14) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -420px;
+}
+
+nav .content ul.fl > li > div.drop_down > ul > li:nth-of-type(15) > div.group {
+  background: #fff url(../images/brand_category1.png) 15px no-repeat;
+  background-position-x: -3px;
+  background-position-y: -452px;
 }
 
 nav > .content > a {
@@ -580,12 +711,15 @@ nav > .content > a {
 /*banner*/
 div.banner {
   height: 520px;
+  position: relative;
+  z-index: 1;
 }
 
 div.banner img {
   width: 100%;
   height: 520px;
   margin: 0 auto;
+  z-index: 99;
 }
 
 /* main */

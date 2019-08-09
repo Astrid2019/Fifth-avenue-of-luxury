@@ -1074,6 +1074,8 @@ main.content div.brand ul li a div.brandship_tbox .brand_hide {
   position: absolute;
   top: 100px;
   padding: 0 34px 0 34px;
+  -webkit-transition: top .3s;
+  transition: top .3s;
 }
 
 main.content div.brand ul li a div.brandship_tbox .brand_hide img {

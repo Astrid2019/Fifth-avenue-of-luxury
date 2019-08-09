@@ -52,6 +52,12 @@ $('#rightArrow').on('mouseover', 'li', function () {
     $(this).children().children().children("i").css("display","none")
 })
 
+// 品牌旗舰
+$('#brandShip').on('mouseover', 'li', function () {
+    // $(this).children(".brand_hide").css("top","0")
+    $(this).children().children().children(".brand_hide").css("top","0")
 
-
+}).on('mouseout', 'li', function () {
+    $(this).children().children().children(".brand_hide").css("top","100px")
+})
 

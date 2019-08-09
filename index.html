@@ -31,20 +31,32 @@
                     </li>
                 </ul>
                 <ul class="fr">
-                    <li>
+                    <li id="phoneDownload">
                         <a href="#">手机版下载</a>
+                        <div id="qr_code">
+                            <img src="./images/qr.jpg" alt="">
+                            <h5>扫描下载APP</h5>
+                            <p>立即<span>赠送50元</span></p>
+                        </div>
                     </li>
                     <li>
                         <a href="#">帮助中心</a>
                     </li>
-                    <li>
+                    <li id="myFive">
                         <a href="#">我的第五大道</a>
+                        <ul id="myFiveUl">
+                            <li><a href="javascript:;">我的订单</a></li>
+                            <li><a href="javascript:;">我的收藏</a></li>
+                            <li><a href="javascript:;">已购商品</a></li>
+                            <li><a href="javascript:;">我的商品</a></li>
+                            <li><a href="javascript:;">我的积分</a></li>
+                        </ul>
                     </li>
                     <li>
                         <span></span>
                         <a href="#">注册</a>
                     </li>
-                    <li>
+                    <li class="login">
                         <a href="#">登录</a>
                     </li>
                 </ul>
@@ -71,12 +83,15 @@
             </ul>
         </div>
         <div class="shoppingCart fr">
-            <img src="images/v30cart.png" alt="">
-            (<span>0</span>)
+            <div class="cartImg">
+                <img src="images/v30cart.png" alt="">
+                (<span>0</span>)
+            </div>
+            <div class="cartNotice"></div>
         </div>
         <h3 class="fr"><a href="#"><img src="images/overseadef.jpg" alt="" srcset=""></a></h3>
     </div>
-    <nav>
+    <!-- <nav>
         <div class="content">
             <ul class="fl">
                 <li><a href="">商品分类</a></li>
@@ -98,8 +113,8 @@
             </ul>
             <a href=""></a>
         </div>
-    </nav>
-    <div class="banner"><img src="./images/banner1.jpg" alt=""></div>
+    </nav> -->
+    <!-- <div class="banner"><img src="./images/banner1.jpg" alt=""></div>
     <main class="content">
         <div class="brand clearfix">
             <img src="./images/mainx_brandship.png" alt="">
@@ -201,8 +216,8 @@
                 <li><a href=""><img src="./images/liftstyle_pic3.jpg" alt=""></a></li>
                 <li><a href=""><img src="./images/liftstyle_pic3.jpg" alt=""></a></li>
             </ul>
-        </div>
-        <!-- 
+        </div> -->
+    <!-- 
         <div class="storesame">
             <div class="storesame_title">
                 <img src=".//images/storesametitle.jpg" alt="商场同款 HOT ASLE">
@@ -317,7 +332,7 @@
             </div>
         </div>
  -->
-        <div class="shoes_content">
+    <!-- <div class="shoes_content">
             <div class="shoes_title">
                 <img src="./images/goodtitle3.jpg" alt="">
             </div>
@@ -423,10 +438,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-    </main>
-    <footer>
+    <!-- </main> -->
+    <!-- <footer>
         <div class="content">
             <div class="footer_top clearfix">
                 <ul class="footer_button">
@@ -559,7 +574,9 @@
                 <a href=""><img src="./images/contact_pic3.jpg"></a>
             </div>
         </div>
-    </footer>
+    </footer> -->
+    <script src="./lib/jquery-3.4.1.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

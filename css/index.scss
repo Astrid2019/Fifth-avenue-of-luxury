@@ -20,15 +20,17 @@
 .s_menu {
 	height: 30px;
 	background: #f2f2f2;
+	position: relative;
+	z-index:1;
 
 	.content ul.fl {
 		height: 30px;
 
-		li {
+		>li {
 			float: left;
 			height: 30px;
 
-			&:first-child {
+			&:nth-of-type(1) {
 				line-height: 14px;
 				width: 110px;
 				height: 14px;
@@ -54,7 +56,7 @@
 				vertical-align: top;
 			}
 
-			&:last-child {
+			&:nth-of-type(2) {
 				padding-left: 6px;
 
 				span {
@@ -76,31 +78,34 @@
 		height: 30px;
 		width: 600px;
 
-		li {
+		>li {
 			float: right;
 
-			a {
+			>a {
 				line-height: 12px;
 				margin-top: 9px;
+				margin-bottom:9px;
 			}
 
-			&:last-child {
+			&:nth-of-type(5) {
 				width: 100px;
-
-				a {
+				>a {
 					width: 44px;
 					border-right: 1px solid #dfdfdf;
 					text-align: left;
 					float: right;
+					&:hover{
+						color:#f00;
+					}
 				}
 			}
 
-			&:nth-child(4) {
+			&:nth-of-type(4) {
 				width: 88px;
 				text-align: right;
 				position: relative;
 
-				 a {
+				 >a {
 					float: right;
 					padding-right: 18px;
 					border-right: 1px solid #dfdfdf;
@@ -117,17 +122,45 @@
 				}
 			}
 
-			&:nth-child(3) {
+			&:nth-of-type(3) {
 				width: 130px;
-				height: 30px;
+				// height: 30px;
 				background: url(../images/brandstore_share.png) no-repeat -253px -436px;
-			
-				a {
+				&.five_boxShadow{
+					box-shadow: 0 0 2px rgba(0,0,0,.2);
+					background-color: #fff;
+				}
+				>a {
 					padding-left: 15px;
+				}
+				&:hover{
+					background-position: -253px -464px;
+					>a{
+						color:#f00;
+					}
+				}
+				>ul{
+					display: none;
+					width:130px;
+					height:150px;
+					background: #fff;
+					text-align: center;
+
+					li{
+						height:30px;
+						line-height:30px;				
+						a{
+							color: #757272;
+							&:hover{
+								color:#f00;
+							}
+						}
+					}
+
 				}
 			}
 
-			&:nth-child(2) {
+			&:nth-of-type(2) {
 				width: 85px;
 				height: 30px;
 				a {
@@ -137,13 +170,48 @@
 				}				
 			}
 
-			&:nth-child(1) {
+			&:nth-of-type(1) {
 				width: 106px;
+				// height:30px;
 				padding: 0 11px;
 				background: url(../images/brandstore_share.png) no-repeat -208px -369px;
-			
 				a {
 					padding-left: 5px;
+				}
+				&:hover{
+					background-position: -208px -404px;
+					a{
+						color:#f00;
+					}
+				}
+				&.five_boxShadow{
+					box-shadow: 0 0 2px rgba(0,0,0,.2);
+					background-color: #fff;
+				}
+				>div{
+					display: none;
+					width:106px;
+					height:152px;
+					text-align: center;
+					cursor:pointer;
+					position: relative;
+					z-index:9999;
+					img{
+						width:106px;
+						height:111px;
+					}
+					h5{
+						line-height: 20px;
+    				font-size: 13px;
+					}
+					p{
+						line-height: 20px;
+						font-size: 13px;
+						span{
+							color: #d00000;
+   							font-size: 16px;
+						}
+					}
 				}
 			}
 		}
@@ -236,6 +304,7 @@ div.search {
 }
 
 /* 导航 */
+
 nav {
 	width: 100%;
 	height: 38px;

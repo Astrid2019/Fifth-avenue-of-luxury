@@ -19,6 +19,19 @@ $("#phoneDownload").mouseout(function () {
     $("#phoneDownload").removeClass('five_boxShadow');
 })
 
+// 购物车下拉
+$(".shoppingCart").mouseover(function(){
+    $(".cartNotice").css("display", "inline-block");
+    $(".cart_em").css("display", "block");
+    
+})
+$(".shoppingCart").mouseout(function () {
+    $(".cartNotice").css("display", "none");
+    $(".cart_em").css("display", "none");
+   
+})
+
+
 
 
 

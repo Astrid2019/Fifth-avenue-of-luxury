@@ -125,7 +125,7 @@ a:hover {
   height: 30px;
   background: #f2f2f2;
   position: relative;
-  z-index: 1;
+  z-index: 100;
 }
 
 .s_menu .content ul.fl {
@@ -344,6 +344,8 @@ a:hover {
 /* 搜索 */
 div.search {
   height: 110px;
+  position: relative;
+  z-index: 99;
 }
 
 div.search h1 {
@@ -408,18 +410,30 @@ div.search .search_center ul li a:hover {
 }
 
 div.search h3 {
-  margin-top: 35px;
+  position: absolute;
+  top: 35px;
+  z-index: -1;
+  right: 123px;
+  width: 200px;
+  height: 30px;
+  background-size: 100% 100%;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 div.search .shoppingCart {
+  width: 290px;
+  position: relative;
+  margin-top: 35px;
+  z-index: 99;
+}
+
+div.search .shoppingCart .cartImg {
   width: 94px;
   height: 32px;
   line-height: 32px;
-  text-indent: 4.4em;
+  text-indent: 3.8em;
   border: 1px solid #ccc;
-  margin-right: 10px;
-  margin-top: 35px;
-  margin-left: 15px;
   color: #666;
   position: relative;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
@@ -428,14 +442,41 @@ div.search .shoppingCart {
   background: url(../images/brandstore_share.png) no-repeat -376px -405px;
 }
 
-div.search .shoppingCart img {
+div.search .shoppingCart .cartImg img {
   position: absolute;
   left: 10px;
   top: 2px;
 }
 
-div.search .shoppingCart span {
+div.search .shoppingCart .cartImg span {
   color: #d00000;
+}
+
+div.search .shoppingCart .cartNotice {
+  display: none;
+  clear: both;
+  width: 268px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 34px;
+}
+
+div.search .shoppingCart em {
+  width: 94px;
+  height: 3px;
+  display: none;
+  position: absolute;
+  background: #fff;
+  right: 1px;
+  top: 32px;
+  z-index: 1;
 }
 
 /* 导航 */

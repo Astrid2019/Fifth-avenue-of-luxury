@@ -76,10 +76,13 @@ $("#hotStore").on("mouseover", "section", function () {
     $(this).children(".leftline").css("height", 0)
 })
 
-
-
-
-
-
-
-
+// hot items
+for (let i = 0; i < 3; i++) {
+    var storesameLi = $("#storesame").find("li");
+    storesameLi.eq(i).mouseover(function () {
+        var left = -1210 * i +"px";
+        $(".storesame_bottom>ul").css("left", left)
+        $("#storesame .target").removeClass("target")
+        $(this).addClass("target")
+    })
+}

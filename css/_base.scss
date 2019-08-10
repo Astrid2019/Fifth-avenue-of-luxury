@@ -106,3 +106,16 @@ a {
 a:hover {
     color: #b28247;
 }
+
+.content {
+	width: 1210px;
+	margin: 0 auto;
+}
+html,body{
+	height:100%;
+}
+
+@mixin twoProperties($w,$h){
+	width:$w;
+	height:$h;
+}

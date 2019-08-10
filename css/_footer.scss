@@ -1,0 +1,124 @@
+/* footer */
+footer {
+	height: 600px;
+	background: url(./images/index/footer_message_bg.jpg) center;
+	border-top: 1px solid #c9c9c9;
+	.content{
+		.footer_top {
+			height: 116px;
+			border-bottom: 1px solid #c9c9c9;
+			ul>li {
+				width: 242px;
+				height: 64px;
+				float: left;
+				margin-top: 26px;
+				a{
+					float: left;
+					overflow: hidden;
+				}
+				div {
+					display: inline-block;
+					width: 160px;
+					height: 48px;
+					margin-top: 8px;
+					p {
+						font-weight: bold;
+						color: #000;
+					}
+					a {
+						color: #333;
+						font-size: 12px;
+						&:hover {
+							text-decoration: underline;
+						}
+						img {
+							width: 64px;
+							height: 64px;
+							display: inline-block;
+							padding-left: 10px;
+							padding-right: 5px;
+							cursor: pointer;
+							vertical-align: top;
+						}
+					}
+				}
+			}
+		}
+		.footer_center {
+			height: 283px;
+			ul li {
+				float: left;
+				width: 185px;
+				overflow: hidden;
+				&.pht_app {
+					width: 140px;
+					height: 283px;
+				}
+				&.pht_weibo {
+					width: 125px;
+					height: 283px;
+				}
+				span.sp01 {
+					font-weight: bold;
+					color: #000;
+					margin-top: 20px;
+					margin-bottom: 20px;
+					display: block;
+				}
+				a {
+					font-size: 12px;
+					line-height: 24px;
+					&:hover {
+						text-decoration: underline;
+						color: #333;
+					}
+				}
+			}
+		}
+		.footer_bottom {
+			text-align: center;
+			.footer_message_btm_t {
+				line-height: 66px;
+				font-size: 0;
+				a {
+					display: inline-block;
+					font-size: 12px;
+					line-height: 12px;
+					border-right: solid #fff 1px;
+					color: #fff;
+					padding: 0 12px;
+					&:hover {
+						text-decoration: underline;
+					}
+					&:last-child {
+						border: 0;
+					}
+				}
+			}
+			.footer_target{
+				a {
+					display: inline-block;
+					font-size: 12px;
+					line-height: 12px;
+					border-right: solid #fff 1px;
+					color: #fff;
+					padding: 0 10px;
+					&:hover {
+						text-decoration: underline;					
+					}
+				}
+				.border0 {
+					border: 0;
+				}
+				p {
+					padding: 20px 0;
+					color: #fff;
+				}
+			} 
+			a {
+				display: inline-block;
+				border: 0;
+			}
+		}
+	} 
+}

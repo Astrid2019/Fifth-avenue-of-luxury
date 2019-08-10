@@ -1731,7 +1731,7 @@ main.content div.promotion .promotion_content .bottom .left .big .small {
 /* footer */
 footer {
   height: 600px;
-  background: url(../images/index/footer_message_bg.jpg) center;
+  background: url(./images/index/footer_message_bg.jpg) center;
   border-top: 1px solid #c9c9c9;
 }
 

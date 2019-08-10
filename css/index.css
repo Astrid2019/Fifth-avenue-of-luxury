@@ -1114,7 +1114,7 @@ main.content .hotstore .hotstore_title img {
   height: 60px;
 }
 
-main.content .hotstore ul > li > div.hotflagson {
+main.content .hotstore ul > li > section.hotflagson {
   position: relative;
   float: left;
   width: 107px;
@@ -1125,16 +1125,16 @@ main.content .hotstore ul > li > div.hotflagson {
   margin-bottom: 7px;
 }
 
-main.content .hotstore ul > li > div.hotflagson > img {
+main.content .hotstore ul > li > section.hotflagson > img {
   width: 107px;
   height: 54px;
 }
 
-main.content .hotstore ul > li > div.hotflagson:nth-child(7n) {
+main.content .hotstore ul > li > section.hotflagson:nth-child(7n) {
   margin-right: 0;
 }
 
-main.content .hotstore ul > li > div.hotflagson .hotmiddle {
+main.content .hotstore ul > li > section.hotflagson .hotmiddle {
   position: absolute;
   left: 29px;
   top: 14px;
@@ -1147,17 +1147,17 @@ main.content .hotstore ul > li > div.hotflagson .hotmiddle {
   transition: all .3s;
 }
 
-main.content .hotstore ul > li > div.hotflagson .hotmiddle .brandchnname {
+main.content .hotstore ul > li > section.hotflagson .hotmiddle .brandchnname {
   font-size: 18px;
   text-align: center;
 }
 
-main.content .hotstore ul > li > div.hotflagson .hotmiddle .blacksline {
+main.content .hotstore ul > li > section.hotflagson .hotmiddle .blacksline {
   text-align: center;
   margin-top: 5px;
 }
 
-main.content .hotstore ul > li > div.hotflagson .hotmiddle .blacksline span {
+main.content .hotstore ul > li > section.hotflagson .hotmiddle .blacksline span {
   display: inline-block;
   width: 20px;
   height: 2px;
@@ -1165,7 +1165,7 @@ main.content .hotstore ul > li > div.hotflagson .hotmiddle .blacksline span {
   vertical-align: top;
 }
 
-main.content .hotstore ul > li > div.hotflagson .topline {
+main.content .hotstore ul > li > section.hotflagson .topline {
   width: 0;
   height: 1px;
   position: absolute;
@@ -1176,7 +1176,7 @@ main.content .hotstore ul > li > div.hotflagson .topline {
   transition: all .3s;
 }
 
-main.content .hotstore ul > li > div.hotflagson .rightline {
+main.content .hotstore ul > li > section.hotflagson .rightline {
   width: 1px;
   height: 0;
   position: absolute;
@@ -1187,7 +1187,7 @@ main.content .hotstore ul > li > div.hotflagson .rightline {
   transition: all .3s;
 }
 
-main.content .hotstore ul > li > div.hotflagson .bottomline {
+main.content .hotstore ul > li > section.hotflagson .bottomline {
   width: 0;
   height: 1px;
   position: absolute;
@@ -1198,7 +1198,7 @@ main.content .hotstore ul > li > div.hotflagson .bottomline {
   transition: all .3s;
 }
 
-main.content .hotstore ul > li > div.hotflagson .leftline {
+main.content .hotstore ul > li > section.hotflagson .leftline {
   width: 1px;
   height: 0;
   position: absolute;

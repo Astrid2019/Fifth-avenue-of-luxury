@@ -1543,6 +1543,63 @@ main.content div.storesame .darwin_3colum .imgCol1Hover:hover .imageCover {
   transform: scale(1);
 }
 
+main.content ul.shopCenter {
+  width: 100%;
+}
+
+main.content ul.shopCenter li {
+  float: left;
+  width: 234px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 8px;
+}
+
+main.content ul.shopCenter li .shopcenterbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 234px;
+  height: 100px;
+  -webkit-transition: top .3s;
+  transition: top .3s;
+}
+
+main.content ul.shopCenter li .shopcenterbox:hover {
+  top: -50px;
+}
+
+main.content ul.shopCenter li .shopcenterbox .topbox {
+  width: 234px;
+  height: 50px;
+  line-height: 50px;
+  background: #999;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+main.content ul.shopCenter li .shopcenterbox .bottombox {
+  width: 234px;
+  height: 40px;
+  padding: 5px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+main.content ul.shopCenter li .shopcenterbox .bottombox .border {
+  border: 1px solid #fff;
+  width: 223px;
+  height: 40px;
+}
+
+main.content ul.shopCenter li .shopcenterbox .bottombox .border .en {
+  margin-top: 10px;
+}
+
 main.content div.shoes_content .shoes .shoes_left {
   float: left;
   width: 220px;
@@ -1621,10 +1678,8 @@ main.content div.shoes_content .shoes .shoes_center .slider_bord dl dt {
 }
 
 main.content div.shoes_content .shoes .shoes_right {
-  float: right;
   overflow: hidden;
-  height: 372px;
-  width: 562px;
+  height: 562px;
 }
 
 main.content div.shoes_content .shoes .shoes_right li {

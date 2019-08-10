@@ -1103,13 +1103,59 @@ main.content {
 		}
 	}
 	
+	// 购物中心
 
+	// 五个按钮
+	ul.shopCenter{
+		width:100%;
+		li {
+			float: left;
+			@include twoProperties(234px,50px);
+			overflow: hidden;
+			position: relative;
+			margin-right: 8px;
+			.shopcenterbox {
+				position: absolute;
+				left: 0;
+				top: 0;
+				@include twoProperties(234px,100px);
+				transition: top .3s;
+				&:hover{
+					top:-50px;
+				}
+				.topbox {
+					@include twoProperties(234px,50px);
+					line-height: 50px;
+					background: #999;
+					text-align: center;
+					font-size: 14px;
+					color: #fff;
+				}
+				.bottombox {
+					width: 234px;
+					height: 40px;
+					padding: 5px;
+					background: #333;
+					color: #fff;
+					text-align: center;
+					font-size: 14px;
+					.border {
+						border: 1px solid #fff;
+						width: 223px;
+						height: 40px;
+						.en {
+							margin-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
 	/* 时尚鞋服 */
 	div.shoes_content .shoes{
 		.shoes_left {
 			float: left;
-			width: 220px;
-			height: 366px;
+			@include twoProperties(220px,366px);
 			border: 1px solid #ccc;
 			padding: 0 9px;
 			padding-top: 4px;
@@ -1133,22 +1179,19 @@ main.content {
 			margin-right: 2px;
 			margin-bottom: 2px;
 			border: none;
-			width: 90px;
-			height: auto;
+			@include twoProperties(90px,auto);
 			margin-bottom: 12px;
 			margin-left: 12px;
 		}
 		.shoes_center {
 			float: left;
-			width: 390px;
-			height: 370px;
+			@include twoProperties(390px,370px);
 			border: 1px solid #ccc;
 			overflow: hidden;
 			margin-right: 8px;
 			position: relative;
 			.slider_bord {
-				width: 250px;
-				height: auto;
+				@include twoProperties(250px,auto);
 				padding: 5px 0;
 				position: absolute;
 				bottom: 10px;
@@ -1161,8 +1204,7 @@ main.content {
 				dl{
 					dd{
 						span {
-							width: 20px;
-							height: 2px;
+							@include twoProperties(20px,2px);
 							display: block;
 							margin: 5px auto;
 							background-color: #000;
@@ -1179,14 +1221,12 @@ main.content {
 			}
 		}
 		.shoes_right {
-			float: right;
+			// float: right;
 			overflow: hidden;
-			height: 372px;
-			width: 562px;
+			height: 562px;
 			li {
 				float: left;
-				width: 276px;
-				height: 189px;
+				@include twoProperties(276px,189px);
 				&:nth-child(odd) {
 					margin-right: 7px;
 				}

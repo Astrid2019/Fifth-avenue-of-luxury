@@ -1109,12 +1109,61 @@ main.content .hotstore .hotstore_title {
   height: 60px;
 }
 
-main.content .hotstore .hotstore_title img {
+main.content .hotstore .hotstore_title h2 img {
   width: 230px;
   height: 60px;
 }
 
-main.content .hotstore ul > li > section.hotflagson {
+main.content .hotstore .hotstore_title .hotarrowbtn {
+  padding-top: 23px;
+  padding-right: 15px;
+}
+
+main.content .hotstore .hotstore_title .hotarrowbtn a {
+  display: inline-block;
+}
+
+main.content .hotstore .hotstore_title .hotarrowbtn a span {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+}
+
+main.content .hotstore .hotstore_title .hotarrowbtn a span.hot_pre {
+  background: url(../images/index/share02.png) no-repeat -160px -384px;
+}
+
+main.content .hotstore .hotstore_title .hotarrowbtn a span.hot_next {
+  background: url(../images/index/share02.png) no-repeat -180px -384px;
+  margin-left: 20px;
+}
+
+main.content .hotstore div.storeSlider {
+  width: 1210px;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+main.content .hotstore ul#hotStore {
+  width: 3630px;
+  height: 180px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+main.content .hotstore ul#hotStore > li {
+  width: 1210px;
+  height: 180px;
+  height: 180px;
+  float: left;
+}
+
+main.content .hotstore ul#hotStore > li > section.hotflagson {
   position: relative;
   float: left;
   width: 107px;
@@ -1125,16 +1174,16 @@ main.content .hotstore ul > li > section.hotflagson {
   margin-bottom: 7px;
 }
 
-main.content .hotstore ul > li > section.hotflagson > img {
+main.content .hotstore ul#hotStore > li > section.hotflagson > img {
   width: 107px;
   height: 54px;
 }
 
-main.content .hotstore ul > li > section.hotflagson:nth-child(7n) {
+main.content .hotstore ul#hotStore > li > section.hotflagson:nth-child(7n) {
   margin-right: 0;
 }
 
-main.content .hotstore ul > li > section.hotflagson .hotmiddle {
+main.content .hotstore ul#hotStore > li > section.hotflagson .hotmiddle {
   position: absolute;
   left: 29px;
   top: 14px;
@@ -1147,17 +1196,17 @@ main.content .hotstore ul > li > section.hotflagson .hotmiddle {
   transition: all .3s;
 }
 
-main.content .hotstore ul > li > section.hotflagson .hotmiddle .brandchnname {
+main.content .hotstore ul#hotStore > li > section.hotflagson .hotmiddle .brandchnname {
   font-size: 18px;
   text-align: center;
 }
 
-main.content .hotstore ul > li > section.hotflagson .hotmiddle .blacksline {
+main.content .hotstore ul#hotStore > li > section.hotflagson .hotmiddle .blacksline {
   text-align: center;
   margin-top: 5px;
 }
 
-main.content .hotstore ul > li > section.hotflagson .hotmiddle .blacksline span {
+main.content .hotstore ul#hotStore > li > section.hotflagson .hotmiddle .blacksline span {
   display: inline-block;
   width: 20px;
   height: 2px;
@@ -1165,8 +1214,8 @@ main.content .hotstore ul > li > section.hotflagson .hotmiddle .blacksline span 
   vertical-align: top;
 }
 
-main.content .hotstore ul > li > section.hotflagson .topline {
-  width: 0;
+main.content .hotstore ul#hotStore > li > section.hotflagson .topline {
+  width: 0px;
   height: 1px;
   position: absolute;
   top: -1px;
@@ -1176,7 +1225,7 @@ main.content .hotstore ul > li > section.hotflagson .topline {
   transition: all .3s;
 }
 
-main.content .hotstore ul > li > section.hotflagson .rightline {
+main.content .hotstore ul#hotStore > li > section.hotflagson .rightline {
   width: 1px;
   height: 0;
   position: absolute;
@@ -1187,8 +1236,8 @@ main.content .hotstore ul > li > section.hotflagson .rightline {
   transition: all .3s;
 }
 
-main.content .hotstore ul > li > section.hotflagson .bottomline {
-  width: 0;
+main.content .hotstore ul#hotStore > li > section.hotflagson .bottomline {
+  width: 0px;
   height: 1px;
   position: absolute;
   bottom: -1px;
@@ -1198,7 +1247,7 @@ main.content .hotstore ul > li > section.hotflagson .bottomline {
   transition: all .3s;
 }
 
-main.content .hotstore ul > li > section.hotflagson .leftline {
+main.content .hotstore ul#hotStore > li > section.hotflagson .leftline {
   width: 1px;
   height: 0;
   position: absolute;
@@ -1236,10 +1285,10 @@ main.content div.lifestyle ul li i {
   -webkit-transition: 0s;
   transition: 0s;
   cursor: pointer;
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -ms-filter: blur(10px);
-  filter: blur(10px);
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
 }
 
 main.content div.lifestyle ul li:hover i {

@@ -732,89 +732,119 @@ main.content {
 	.hotstore{
 		.hotstore_title {
 			height: 60px;
-			img {
-				width: 230px;
-				height: 60px;
+			h2 img {
+				@include twoProperties(230px,60px);
 			}
-		}
-		ul>li>section.hotflagson {
-			position: relative;
-			float: left;
-			width: 107px;
-			height: 55px;
-			padding: 14px 29px;
-			border: 1px solid #dfdfdf;
-			margin-right: 6px;
-			margin-bottom: 7px;
-			>img {
-				width: 107px;
-				height: 54px;
-			}
-			&:nth-child(7n) {
-				margin-right: 0;
-			}
-			.hotmiddle {
-				position: absolute;
-				left: 29px;
-				top: 14px;
-				opacity: 0;
-				width: 107px;
-				height: 42px;
-				padding-top: 12px;
-				background: #fff;
-				transition: all .3s;
-				.brandchnname {
-					font-size: 18px;
-					text-align: center;
-				}
-				.blacksline {
-					text-align: center;
-					margin-top: 5px;
-					span {
+			.hotarrowbtn{
+				padding-top: 23px;
+				padding-right: 15px;
+				a{
+					display: inline-block;
+					span{
 						display: inline-block;
-						width: 20px;
-						height: 2px;
-						background: #000;
-						vertical-align: top;
+						width: 8px;
+						height: 15px;
+						&.hot_pre{
+							background: url(../images/index/share02.png) no-repeat -160px -384px;
+						}
+						&.hot_next{
+							background: url(../images/index/share02.png) no-repeat -180px -384px;
+							margin-left: 20px;
+						}
 					}
 				}
 			}
-			.topline {
-				width: 0;
-				height: 1px;
-				position: absolute;
-				top: -1px;
-				left: 0;
-				background: #000;
-				transition: all .3s;
+		}
+		div.storeSlider{
+			@include twoProperties(1210px,180px);
+			overflow: hidden;
+			position: relative;
+		}
+		ul#hotStore{
+			@include twoProperties(3630px,180px);
+			overflow: hidden;
+			position: absolute;
+			left:0;
+			top:0;
+			transition: all .5s;
+			>li{
+				@include twoProperties(1210px,180px);
+				height: 180px;
+				float: left;
+				>section.hotflagson {
+					position: relative;
+					float: left;
+					@include twoProperties(107px,55px);
+					padding: 14px 29px;
+					border: 1px solid #dfdfdf;
+					margin-right: 6px;
+					margin-bottom: 7px;
+					>img {
+						@include twoProperties(107px,54px);
+					}
+					&:nth-child(7n) {
+						margin-right: 0;
+					}
+					.hotmiddle {
+						position: absolute;
+						left: 29px;
+						top: 14px;
+						opacity: 0;
+						width: 107px;
+						height: 42px;
+						padding-top: 12px;
+						background: #fff;
+						transition: all .3s;
+						.brandchnname {
+							font-size: 18px;
+							text-align: center;
+						}
+						.blacksline {
+							text-align: center;
+							margin-top: 5px;
+							span {
+								display: inline-block;
+								@include twoProperties(20px,2px);
+								background: #000;
+								vertical-align: top;
+							}
+						}
+					}
+					.topline {
+						@include twoProperties(0px,1px);
+						position: absolute;
+						top: -1px;
+						left: 0;
+						background: #000;
+						transition: all .3s;
+					}
+					.rightline {
+						@include twoProperties(1px,0);
+						position: absolute;
+						bottom: -1px;
+						right: -1px;
+						background: #000;
+						transition: all .3s;
+					}
+					.bottomline {
+						@include twoProperties(0px,1px);
+						position: absolute;
+						bottom: -1px;
+						right: 0;
+						background: #000;
+						transition: all .3s;
+					}
+					.leftline {
+						@include twoProperties(1px,0);
+						position: absolute;
+						top: -1px;
+						left: -1px;
+						background: #000;
+						transition: all .3s;
+					}
+				}
 			}
-			.rightline {
-				width: 1px;
-				height: 0;
-				position: absolute;
-				bottom: -1px;
-				right: -1px;
-				background: #000;
-				transition: all .3s;
-			}
-			.bottomline {
-				width: 0;
-				height: 1px;
-				position: absolute;
-				bottom: -1px;
-				right: 0;
-				background: #000;
-				transition: all .3s;
-			}
-			.leftline {
-				width: 1px;
-				height: 0;
-				position: absolute;
-				top: -1px;
-				left: -1px;
-				background: #000;
-				transition: all .3s;
-			}
+			
 		}
 	}
 	
@@ -847,17 +877,17 @@ main.content {
     		-webkit-transition: 0s;
     		transition: 0s;
 			cursor: pointer;	
-			-webkit-filter: blur(10px);
-       		-moz-filter: blur(10px);
-        	-ms-filter: blur(10px);    
-            filter: blur(10px);  
+			-webkit-filter: blur(20px);
+       		-moz-filter: blur(20px);
+        	-ms-filter: blur(20px);    
+            filter: blur(20px);  
 		}
 		&:hover i{
 			left:387px;
-		   transition:.7s;
-		   -moz-transition:.7s;
-		   -o-transition:.7s;
-		   -webkit-transition:.7s
+		    transition:.7s;
+		    -moz-transition:.7s;
+		    -o-transition:.7s;
+		    -webkit-transition:.7s
 	   }
 	}
 	/* 时尚鞋服 */

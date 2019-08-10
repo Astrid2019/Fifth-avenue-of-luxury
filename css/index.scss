@@ -827,6 +827,38 @@ main.content {
 		&:last-child {
 			margin-right: 0;
 		}
+		i{
+			position: absolute;
+    		left: -402px;
+    		top: 0;
+    		width: 313px;
+    		height: 393px;
+    		background-image: linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,0));
+    		background-image: -moz-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,0));
+    		background-image: -webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,0));
+    		background-image: -o-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,0));
+    		background-image: -ms-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,0));
+    		transform: skewx(-25deg);
+    		-o-transform: skewx(-25deg);
+    		-moz-transform: skewx(-25deg);
+    		-webkit-transform: skewx(-25deg);
+    		-moz-transition: 0s;
+    		-o-transition: 0s;
+    		-webkit-transition: 0s;
+    		transition: 0s;
+			cursor: pointer;	
+			-webkit-filter: blur(10px);
+       		-moz-filter: blur(10px);
+        	-ms-filter: blur(10px);    
+            filter: blur(10px);  
+		}
+		&:hover i{
+			left:387px;
+		   transition:.7s;
+		   -moz-transition:.7s;
+		   -o-transition:.7s;
+		   -webkit-transition:.7s
+	   }
 	}
 	/* 时尚鞋服 */
 	div.shoes_content .shoes{

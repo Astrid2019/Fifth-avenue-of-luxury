@@ -80,9 +80,28 @@ $("#hotStore").on("mouseover", "section", function () {
 for (let i = 0; i < 3; i++) {
     var storesameLi = $("#storesame").find("li");
     storesameLi.eq(i).mouseover(function () {
-        var left = -1210 * i +"px";
+        var left = -1210 * i + "px";
         $(".storesame_bottom>ul").css("left", left)
         $("#storesame .target").removeClass("target")
         $(this).addClass("target")
     })
 }
+
+// 主题活动下面
+$("#promotionBottom").on("mouseover", "section", function () {
+    var src = $(this).children().children("img")[0].src;
+    src = src.slice(-17,-16)
+    // console.log(src)
+    var imgSrc=`./images/index/${src}bank.jpg`;
+    // console.log(imgSrc)
+    $(this).children(".topline").css("width", "194px")
+    $(this).children(".bottomline").css("width", "194px")
+    $(this).children(".rightline").css("height", "65px")
+    $(this).children(".leftline").css("height", "65px")
+    $("#promotRight").children().children("img").attr("src",imgSrc);
+}).on('mouseout', 'section', function () {
+    $(this).children(".topline").css("width", 0)
+    $(this).children(".bottomline").css("width", 0)
+    $(this).children(".rightline").css("height", 0)
+    $(this).children(".leftline").css("height", 0)
+})

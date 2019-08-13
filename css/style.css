@@ -121,7 +121,7 @@ html, body {
 /* footer */
 footer {
   height: 600px;
-  background: url(./images/index/footer_message_bg.jpg) center;
+  background: url(../images/index/footer_message_bg.jpg) center;
   border-top: 1px solid #c9c9c9;
 }
 
@@ -140,6 +140,16 @@ footer .content .footer_top ul > li {
 footer .content .footer_top ul > li a {
   float: left;
   overflow: hidden;
+}
+
+footer .content .footer_top ul > li a > img {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 5px;
+  cursor: pointer;
+  vertical-align: top;
 }
 
 footer .content .footer_top ul > li div {

@@ -366,8 +366,9 @@ main.login .content .loginRight > div.loginBody {
 }
 
 main.login .content .loginRight > div.loginBody .is-qcode-con {
+  padding-top: 70px;
   width: 400px;
-  margin: 0 auto;
+  margin: 0x auto 0;
   vertical-align: middle;
   text-align: center;
 }
@@ -379,6 +380,9 @@ main.login .content .loginRight > div.loginBody .is-qcode-con .qcode-hook {
 
 main.login .content .loginRight > div.loginBody .is-qcode-con .qcode-hook img {
   vertical-align: top;
+  display: inline-block;
+  -webkit-transition: width .3s;
+  transition: width .3s;
 }
 
 main.login .content .loginRight > div.loginBody .is-qcode-con .qcode-hook img.qc-img {
@@ -386,16 +390,18 @@ main.login .content .loginRight > div.loginBody .is-qcode-con .qcode-hook img.qc
   height: 165px;
   display: none;
   width: 0px;
+  -webkit-transition: width .3s;
+  transition: width .3s;
 }
 
 main.login .content .loginRight > div.loginBody .is-qcode-con > p {
   padding-top: 25px;
   font-size: 14px;
-  color: #999999;
 }
 
 main.login .content .loginRight > div.loginBody .is-qcode-con > p a {
   color: #757272;
+  display: inline;
 }
 
 main.login .content .loginRight > div.loginBody .is-qcode-con > p a.orange {
@@ -444,13 +450,14 @@ main.login .content .loginRight > div.loginBody .is-qcode-con > p.start-text a {
 
 main.login .content .loginRight > div.loginBody .is-hook {
   height: 100%;
+  display: none;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit {
+main.login .content .loginRight > div.loginBody .is-hook #submit {
   padding-top: 20px;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit .inp-hook {
+main.login .content .loginRight > div.loginBody .is-hook #submit .inp-hook {
   display: block;
   margin: 0 31px;
   margin-top: 16px;
@@ -461,13 +468,13 @@ main.login .content .loginRight > div.loginBody .is-hook#submit .inp-hook {
   font-size: 14px;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit .error-tip {
+main.login .content .loginRight > div.loginBody .is-hook #submit .error-tip {
   width: 338px;
   margin: 0 31px;
   height: 54px;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit .error-tip .error-tip-wp {
+main.login .content .loginRight > div.loginBody .is-hook #submit .error-tip .error-tip-wp {
   font-size: 0;
   display: inline-block;
   *zoom: 1;
@@ -480,17 +487,17 @@ main.login .content .loginRight > div.loginBody .is-hook#submit .error-tip .erro
   display: none;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit .error-tip .error-tip-wp .tip-logo {
+main.login .content .loginRight > div.loginBody .is-hook #submit .error-tip .error-tip-wp .tip-logo {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background-image: url(/vendor/images/5lux/login/new/close.png);
+  background-image: url(../images/details/close.png);
   background-size: 14px 14px;
   background-repeat: no-repeat;
   vertical-align: middle;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit .error-tip .error-tip-wp .tip-text {
+main.login .content .loginRight > div.loginBody .is-hook #submit .error-tip .error-tip-wp .tip-text {
   height: 14px;
   line-height: 14px;
   font-size: 14px;
@@ -501,7 +508,7 @@ main.login .content .loginRight > div.loginBody .is-hook#submit .error-tip .erro
   margin-left: 5px;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit .sub-btn {
+main.login .content .loginRight > div.loginBody .is-hook #submit .sub-btn {
   transition: all linear 0.5s;
   -moz-transition: all linear 0.5s;
   -webkit-transition: all linear 0.5s;
@@ -520,7 +527,11 @@ main.login .content .loginRight > div.loginBody .is-hook#submit .sub-btn {
   cursor: pointer;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit .sub-bottom {
+main.login .content .loginRight > div.loginBody .is-hook #submit .sub-btn:hover {
+  background: #a60000;
+}
+
+main.login .content .loginRight > div.loginBody .is-hook #submit .sub-bottom {
   margin: 0 31px;
   margin-top: 20px;
   height: 14px;
@@ -529,20 +540,29 @@ main.login .content .loginRight > div.loginBody .is-hook#submit .sub-bottom {
   color: #999;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit .sub-bottom .sub-bottom-left label {
+main.login .content .loginRight > div.loginBody .is-hook #submit .sub-bottom .sub-bottom-left label {
   display: inline-block;
   vertical-align: middle;
   *zoom: 1;
   *display: block;
   width: 14px;
   height: 14px;
-  background-image: url(/vendor/images/5lux/login/new/is_yes_bg.png);
+  background-image: url(../images/details/is_yes_bg.png);
   background-size: 14px 14px;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit .sub-bottom .sub-bottom-left P {
+main.login .content .loginRight > div.loginBody .is-hook #submit .sub-bottom .sub-bottom-left label i {
+  display: none;
+  width: 14px;
+  height: 14px;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-image: url(../images/details/is_yes.png);
+}
+
+main.login .content .loginRight > div.loginBody .is-hook #submit .sub-bottom .sub-bottom-left P {
   display: inline-block;
   *zoom: 1;
   *display: block;
@@ -551,19 +571,29 @@ main.login .content .loginRight > div.loginBody .is-hook#submit .sub-bottom .sub
   margin-left: 5px;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit .sub-bottom .sub-bottom .sub-bottom-right {
+main.login .content .loginRight > div.loginBody .is-hook #submit .sub-bottom .sub-bottom-right {
   height: 100%;
   font-size: 14px;
 }
 
-main.login .content .loginRight > div.loginBody .is-hook#submit .sub-bottom .sub-bottom .sub-bottom-right .rightSubmit {
+main.login .content .loginRight > div.loginBody .is-hook #submit .sub-bottom .sub-bottom-right span {
+  float: left;
+  margin: 0 3px;
+}
+
+main.login .content .loginRight > div.loginBody .is-hook #submit .sub-bottom .sub-bottom-right a {
+  float: left;
+  color: #757272;
+}
+
+main.login .content .loginRight > div.loginBody .is-hook #submit .sub-bottom .sub-bottom-right a.rightSubmit {
   color: #ff9900;
 }
 
 main.login .content .loginRight .other-type {
   height: 16px;
   width: 100%;
-  background: url(/vendor/images/5lux/login/new/other-type.jpg) 100% 100% no-repeat;
+  background: url(../images/details/other-type.jpg) 100% 100% no-repeat;
 }
 
 main.login .content .loginRight .is_ot {
@@ -581,23 +611,46 @@ main.login .content .loginRight .is_ot .ul-hook {
   margin: auto;
 }
 
-main.login .content .loginRight .is_ot .ul-hook .is_ot .li-hook {
+main.login .content .loginRight .is_ot .ul-hook > li {
   height: 32px;
   width: 33.333333333%;
   float: left;
   text-align: center;
 }
 
-main.login .content .loginRight .is_ot .ul-hook .is_ot .li-hook .is_wx {
-  background-image: url(/vendor/images/5lux/login/new/is_wx.png);
+main.login .content .loginRight .is_ot .ul-hook > li i {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  *zoom: 1;
+  *display: block;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  cursor: pointer;
 }
 
-main.login .content .loginRight .is_ot .ul-hook .is_ot .li-hook .is_qq {
-  background-image: url(/vendor/images/5lux/login/new/is_qq.png);
+main.login .content .loginRight .is_ot .ul-hook > li i.is_wx {
+  background-image: url(../images/details/is_wx.png);
 }
 
-main.login .content .loginRight .is_ot .ul-hook .is_ot .li-hook .is_wb {
-  background-image: url(/vendor/images/5lux/login/new/is_wb.png);
+main.login .content .loginRight .is_ot .ul-hook > li i.is_wx:hover {
+  background-image: url(../images/details/is_wx_sel.png);
+}
+
+main.login .content .loginRight .is_ot .ul-hook > li i.is_qq {
+  background-image: url(../images/details/is_qq.png);
+}
+
+main.login .content .loginRight .is_ot .ul-hook > li i.is_qq:hover {
+  background-image: url(../images/details/is_qq_sel.png);
+}
+
+main.login .content .loginRight .is_ot .ul-hook > li i.is_wb {
+  background-image: url(../images/details/is_wb.png);
+}
+
+main.login .content .loginRight .is_ot .ul-hook > li i.is_wb:hover {
+  background-image: url(../images/details/is_wb_sel.png);
 }
 
 main.details {

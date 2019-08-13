@@ -78,9 +78,11 @@ main.login{
             >div.loginBody{
                 width: 100%;
                 height: 380px;
+                
                 .is-qcode-con{
+                    padding-top: 70px;
                     width: 400px;
-                    margin: 0 auto;
+                    margin: 0x auto 0;
                     vertical-align: middle;
                     text-align: center;
                     .qcode-hook{
@@ -88,20 +90,27 @@ main.login{
                         display: inline-block;
                         img{
                             vertical-align: top;
+                            display: inline-block;
+                            transition: width .3s;
+                            
                             &.qc-img{
                                 margin-left: 20px;
                                 height: 165px;
                                 display: none;
                                 width: 0px;
+                                transition: width .3s;
                             }
+                           
                         }
+                        
                     }
                     >p{
                         padding-top: 25px;
                         font-size: 14px;
-                        color: #999999;
+                        // color: #999999;
                         a{
                             color: #757272;
+                            display: inline;
                             &.orange{
                             color: #ff9900;
                             }
@@ -145,7 +154,8 @@ main.login{
                 }
                 .is-hook {
                     height: 100%;
-                    &#submit {
+                    display: none;
+                    #submit {
                         padding-top: 20px;
                         .inp-hook {
                             display: block;
@@ -176,7 +186,7 @@ main.login{
                                     display: inline-block;
                                     width: 14px;
                                     height: 14px;
-                                    background-image: url(/vendor/images/5lux/login/new/close.png);
+                                    background-image: url(../images/details/close.png);
                                     background-size: 14px 14px;
                                     background-repeat: no-repeat;
                                     vertical-align: middle;
@@ -210,6 +220,9 @@ main.login{
                             font-size: 18px;
                             border: none;
                             cursor: pointer;
+                            &:hover{
+                                background: #a60000;
+                            }
                         }
                         .sub-bottom {
                             margin: 0 31px;
@@ -226,10 +239,18 @@ main.login{
                                     *display: block;
                                     width: 14px;
                                     height: 14px;
-                                    background-image: url(/vendor/images/5lux/login/new/is_yes_bg.png);
+                                    background-image: url(../images/details/is_yes_bg.png);
                                     background-size: 14px 14px;
                                     background-repeat: no-repeat;
                                     cursor: pointer;
+                                    i {
+                                        display: none;
+                                        width: 14px;
+                                        height: 14px;
+                                        background-size: 14px 14px;
+                                        background-repeat: no-repeat;
+                                        background-image: url(../images/details/is_yes.png);
+                                    }
                                 }
                                 P{
                                     display: inline-block;
@@ -240,11 +261,19 @@ main.login{
                                     margin-left: 5px;
                                 }
                             } 
-                            .sub-bottom .sub-bottom-right {
+                            .sub-bottom-right {
                                 height: 100%;
                                 font-size: 14px;
-                                .rightSubmit{
-                                    color: #ff9900;
+                                span{
+                                    float: left;
+                                    margin:0 3px;
+                                }
+                                a{
+                                    float: left;
+                                    color:#757272;
+                                    &.rightSubmit{
+                                        color: #ff9900;
+                                    }
                                 }
                             }
                         }
@@ -254,7 +283,7 @@ main.login{
             .other-type{
                 height: 16px;
                 width: 100%;
-                background: url(/vendor/images/5lux/login/new/other-type.jpg) 100% 100% no-repeat;
+                background: url(../images/details/other-type.jpg) 100% 100% no-repeat;
             }
             .is_ot {
                 height: 74px;
@@ -267,20 +296,40 @@ main.login{
                     top: 0;
                     bottom: 0;
                     margin: auto;
-                    .is_ot .li-hook {
+                    >li {
                         height: 32px;
                         width: 33.333333333%;
                         float: left;
                         text-align: center;
-                        .is_wx {
-                            background-image: url(/vendor/images/5lux/login/new/is_wx.png);
+                        i{
+                            width: 32px;
+                            height: 32px;
+                            display: inline-block;
+                            *zoom: 1;
+                            *display: block;
+                            background-repeat: no-repeat;
+                            background-size: 32px 32px;
+                            cursor: pointer;
+                            &.is_wx {
+                                background-image: url(../images/details/is_wx.png);
+                                &:hover{
+                                background-image: url(../images/details/is_wx_sel.png);
+                                }
+                            }
+                            &.is_qq {
+                                background-image: url(../images/details/is_qq.png);
+                                &:hover{
+                                    background-image: url(../images/details/is_qq_sel.png);
+                                    }
+                            }
+                            &.is_wb {
+                                background-image: url(../images/details/is_wb.png);
+                                &:hover{
+                                    background-image: url(../images/details/is_wb_sel.png);
+                                    }
+                            }
                         }
-                        .is_qq {
-                            background-image: url(/vendor/images/5lux/login/new/is_qq.png);
-                        }
-                        .is_wb {
-                            background-image: url(/vendor/images/5lux/login/new/is_wb.png);
-                        }
+                        
                     }
                 }
             }

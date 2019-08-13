@@ -67,7 +67,10 @@ figcaption {
     display: block;
 }
 
-
+tbody,td,tr,th{
+    border: none;
+    text-align: left;
+}
 
 .fl {
     float: left;

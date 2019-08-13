@@ -303,6 +303,7 @@ header.login span {
 
 header.login p {
   line-height: 98px;
+  font-size: 13px;
 }
 
 header.login p i {
@@ -651,6 +652,225 @@ main.login .content .loginRight .is_ot .ul-hook > li i.is_wb {
 
 main.login .content .loginRight .is_ot .ul-hook > li i.is_wb:hover {
   background-image: url(../images/details/is_wb_sel.png);
+}
+
+main.login .content .registerRight {
+  width: 400px;
+  margin-right: 40px;
+  background: #fff;
+}
+
+main.login .content .registerRight .register-c-right {
+  padding: 0 30px;
+  width: 340px;
+  font-size: 0px;
+}
+
+main.login .content .registerRight .register-c-right .rigister-title {
+  padding: 35px 0;
+  font-size: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+}
+
+main.login .content .registerRight .register-c-right > form input {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main.login .content .registerRight .register-c-right > form input.w300 {
+  padding: 0 19px;
+  width: 300px;
+  margin-bottom: 8px;
+}
+
+main.login .content .registerRight .register-c-right > form input.heig48 {
+  height: 48px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+main.login .content .registerRight .register-c-right > form input.w152 {
+  padding: 0 19px;
+  width: 142px;
+}
+
+main.login .content .registerRight .register-c-right > form input.w300 {
+  padding: 0 19px;
+  width: 300px;
+}
+
+main.login .content .registerRight .register-c-right > form input#pwd2 {
+  margin-top: 8px;
+}
+
+main.login .content .registerRight .register-c-right > form .reg-errorTip .reg-errorTip-box {
+  display: none;
+  vertical-align: middle;
+  height: 14px;
+  padding: 10px 0px 10px 0px;
+}
+
+main.login .content .registerRight .register-c-right > form .reg-errorTip .reg-errorTip-box i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-image: url(../images/details/close.png);
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+main.login .content .registerRight .register-c-right > form .reg-errorTip .reg-errorTip-box {
+  /* display: table-cell; */
+  display: none;
+  vertical-align: middle;
+  height: 14px;
+  padding: 10px 0px 10px 0px;
+}
+
+main.login .content .registerRight .register-c-right > form .reg-errorTip .reg-errorTip-box i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-image: url(../images/details/close.png);
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+main.login .content .registerRight .register-c-right > form .codeWarpper {
+  margin-top: 8px;
+  padding-bottom: 16px;
+}
+
+main.login .content .registerRight .register-c-right > form .codeWarpper input {
+  margin-right: 27px;
+  vertical-align: middle;
+}
+
+main.login .content .registerRight .register-c-right > form .codeWarpper span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  cursor: pointer;
+  color: #000;
+}
+
+main.login .content .registerRight .register-c-right > form .seg-tip {
+  height: 54px;
+  display: none;
+}
+
+main.login .content .registerRight .register-c-right > form .seg-tip .seg-tip-box {
+  vertical-align: middle;
+  height: 14px;
+}
+
+main.login .content .registerRight .register-c-right > form .seg-tip .seg-tip-box i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-image: url(../images/details/tan-log.png);
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+main.login .content .registerRight .register-c-right > form .seg-tip .seg-tip-box .seg-tip-box p {
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  display: inline-block;
+  *zoom: 1;
+  *display: block;
+  vertical-align: middle;
+  color: #999;
+}
+
+main.login .content .registerRight .register-c-right > form .rig-bottom {
+  height: 14px;
+  line-height: 14px;
+  padding-bottom: 30px;
+}
+
+main.login .content .registerRight .register-c-right > form .rig-bottom label {
+  cursor: pointer;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-image: url(../images/details/is_yes_bg.png);
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+main.login .content .registerRight .register-c-right > form .rig-bottom label input {
+  display: none;
+}
+
+main.login .content .registerRight .register-c-right > form .rig-bottom label i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-image: url(../images/details/is_yes.png);
+}
+
+main.login .content .registerRight .register-c-right > form .rig-bottom a, main.login .content .registerRight .register-c-right > form .rig-bottom p {
+  display: inline-block;
+  font-size: 13px;
+  height: 14px;
+  line-height: 14px;
+  vertical-align: middle;
+}
+
+main.login .content .registerRight .register-c-right > form .rig-bottom a.fir-link, main.login .content .registerRight .register-c-right > form .rig-bottom p.fir-link {
+  color: #333;
+}
+
+main.login .content .registerRight .register-c-right > form .rig-bottom a.sec-link, main.login .content .registerRight .register-c-right > form .rig-bottom p.sec-link {
+  color: #ff9900;
+}
+
+main.login .content .registerRight .register-c-right > form .sub-btn {
+  transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  /* display: inline-block; */
+  width: 340px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background: #333;
+  margin: 24px 0 20px;
+  /* text-decoration: none; */
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+main.login .content .registerRight .register-c-right > form .sub-btn:hover {
+  background: #a60000;
+}
+
+main.login .content .registerRight .register-c-right > form .can-sub {
+  background: #ccc;
 }
 
 main.details {

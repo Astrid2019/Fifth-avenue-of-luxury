@@ -27,6 +27,7 @@ header.login{
     }
     p{
         line-height: 98px;
+        font-size: 13px;
         i{
             display: inline-block;
             width: 19px;
@@ -52,6 +53,7 @@ main.login{
         background-repeat: no-repeat;
         background-size: 100% 100%;
         margin: 0 auto;
+        // 登录
         .loginRight{
             width: 400px;
             margin-right: 40px;
@@ -334,6 +336,200 @@ main.login{
                 }
             }
         }
+        // 注册
+        .registerRight{
+            width: 400px;
+            margin-right: 40px;
+            background: #fff;
+            .register-c-right{
+                padding: 0 30px;
+                width: 340px;
+                font-size: 0px;
+                .rigister-title{
+                    padding: 35px 0;
+                    font-size: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #000;
+                }
+                >form{
+                    input {
+                        outline: none;
+                        box-shadow: none;
+                        &.w300 {
+                            padding: 0 19px;
+                            width: 300px;
+                            margin-bottom: 8px;
+                        }
+                        &.heig48 {
+                            height: 48px;
+                            border: 1px solid #ccc;
+                            font-size: 14px;
+                        }
+                        &.w152 {
+                            padding: 0 19px;
+                            width: 142px;
+                        }
+                        &.w300 {
+                            padding: 0 19px;
+                            width: 300px;
+                        }
+                        &#pwd2{
+                            margin-top: 8px;
+                        }
+                    }
+                    .reg-errorTip{
+                        .reg-errorTip-box {
+                            display: none;
+                            vertical-align: middle;
+                            height: 14px;
+                            padding: 10px 0px 10px 0px;
+                            i {
+                                display: inline-block;
+                                width: 14px;
+                                height: 14px;
+                                background-size: 14px 14px;
+                                background-repeat: no-repeat;
+                                background-image: url(../images/details/close.png);
+                                vertical-align: middle;
+                                margin-right: 5px;
+                            }
+                        }
+                        .reg-errorTip-box {
+                            /* display: table-cell; */
+                            display: none;
+                            vertical-align: middle;
+                            height: 14px;
+                            padding: 10px 0px 10px 0px;
+                            i {
+                                display: inline-block;
+                                width: 14px;
+                                height: 14px;
+                                background-size: 14px 14px;
+                                background-repeat: no-repeat;
+                                background-image: url(../images/details/close.png);
+                                vertical-align: middle;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    .codeWarpper {
+                        margin-top: 8px;
+                        padding-bottom: 16px;
+                        input {
+                            margin-right: 27px;
+                            vertical-align: middle;
+                        }
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 130px;
+                            height: 50px;
+                            line-height: 50px;
+                            text-align: center;
+                            background-color: #f2f2f2;
+                            font-size: 14px;
+                            cursor: pointer;
+                            color:#000;
+                        }
+                    }
+                    .seg-tip {
+                        height: 54px;
+                        display: none;
+                        .seg-tip-box {
+                            vertical-align: middle;
+                            height: 14px;
+                            i {
+                                display: inline-block;
+                                width: 14px;
+                                height: 14px;
+                                background-size: 14px 14px;
+                                background-repeat: no-repeat;
+                                background-image: url(../images/details/tan-log.png);
+                                vertical-align: middle;
+                                margin-right: 5px;
+                            }
+                            .seg-tip-box p {
+                                font-size: 14px;
+                                height: 14px;
+                                line-height: 14px;
+                                display: inline-block;
+                                *zoom: 1;
+                                *display: block;
+                                vertical-align: middle;
+                                color: #999;
+                            }
+                        }
+                    }
+                    .rig-bottom {
+                        height: 14px;
+                        line-height: 14px;
+                        padding-bottom: 30px;
+                        label {
+                            cursor: pointer;
+                            display: inline-block;
+                            height: 14px;
+                            width: 14px;
+                            background-image: url(../images/details/is_yes_bg.png);
+                            background-repeat: no-repeat;
+                            background-size: 14px 14px;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            input {
+                                display: none;
+                            }
+                            i {
+                                display: inline-block;
+                                width: 14px;
+                                height: 14px;
+                                background-repeat: no-repeat;
+                                background-size: 14px 14px;
+                                background-image: url(../images/details/is_yes.png);
+                            }
+                        }
+                        a,p{
+                            display: inline-block;
+                            font-size: 13px;
+                            height: 14px;
+                            line-height: 14px;
+                            vertical-align: middle;
+                            &.fir-link {
+                                color: #333;
+                            }
+                            &.sec-link {
+                                color: #ff9900;
+                            }
+                        }
+                    }
+                    .sub-btn {
+                        transition: all linear 0.5s;
+                        -moz-transition: all linear 0.5s;
+                        -webkit-transition: all linear 0.5s;
+                        -o-transition: all linear 0.5s;
+                        /* display: inline-block; */
+                        width: 340px;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        color: #fff;
+                        background: #333;
+                        margin: 24px 0 20px;
+                        /* text-decoration: none; */
+                        font-size: 18px;
+                        border: none;
+                        cursor: pointer;
+                        &:hover {
+                            background: #a60000;
+                        }
+                    }
+                    .can-sub {
+                        background: #ccc;
+                    }
+                }
+            }
+        }
+
     }
 }
 

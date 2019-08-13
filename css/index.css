@@ -1010,6 +1010,7 @@ nav > .content > a {
   margin-left: -84px;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  z-index: 999;
 }
 
 .slider .pagination li {
@@ -1021,6 +1022,7 @@ nav > .content > a {
   background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .slider .pagination li.focus {
@@ -1605,6 +1607,26 @@ main.content ul.shopCenter li .shopcenterbox .bottombox .border .en {
   margin-top: 10px;
 }
 
+main.content div.shoes_content .shoes_title .rightbtn {
+  float: right;
+  overflow: hidden;
+  height: 60px;
+  line-height: 60px;
+}
+
+main.content div.shoes_content .shoes_title .rightbtn .icon {
+  float: right;
+  background: url(../images/index/share02.png) no-repeat -470px -360px;
+  width: 18px;
+  height: 60px;
+  margin-left: 6px;
+}
+
+main.content div.shoes_content .shoes_title .rightbtn .moretxt {
+  float: right;
+  font-size: 16px;
+}
+
 main.content div.shoes_content .shoes .shoes_left {
   float: left;
   width: 220px;
@@ -1630,7 +1652,32 @@ main.content div.shoes_content .shoes .shoes_left .goodslinks li {
   text-align: left;
 }
 
-main.content div.shoes_content .shoes .shoes_left .shoes_bottom img {
+main.content div.shoes_content .shoes .shoes_left .shoes_bottom {
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  margin-top: 14px;
+  position: relative;
+}
+
+main.content div.shoes_content .shoes .shoes_left .shoes_bottom .shoes_slider2 {
+  width: 896px;
+  height: 114px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+main.content div.shoes_content .shoes .shoes_left .shoes_bottom .shoes_slider2 > li {
+  width: 224px;
+  height: 114px;
+  float: left;
+}
+
+main.content div.shoes_content .shoes .shoes_left .shoes_bottom .shoes_slider2 > li img {
   float: left;
   margin-right: 2px;
   margin-bottom: 2px;
@@ -1639,6 +1686,53 @@ main.content div.shoes_content .shoes .shoes_left .shoes_bottom img {
   height: auto;
   margin-bottom: 12px;
   margin-left: 12px;
+}
+
+main.content div.shoes_content .shoes .shoes_left .shoes_bottom .shoesBtn {
+  position: relative;
+  width: 80px;
+  margin: 124px auto 0;
+}
+
+main.content div.shoes_content .shoes .shoes_left .shoes_bottom .shoesBtn .btn {
+  width: 8px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+main.content div.shoes_content .shoes .shoes_left .shoes_bottom .shoesBtn .btn.prev {
+  left: 0;
+  background: url(../images/index/share02.png) no-repeat -239px -384px !important;
+}
+
+main.content div.shoes_content .shoes .shoes_left .shoes_bottom .shoesBtn .btn.next {
+  right: 0;
+  background: url(../images/index/share02.png) no-repeat -267px -384px !important;
+}
+
+main.content div.shoes_content .shoes .shoes_left .shoes_bottom .shoesBtn .pagination {
+  margin-left: 12px;
+}
+
+main.content div.shoes_content .shoes .shoes_left .shoes_bottom .shoesBtn .pagination > li {
+  float: left;
+  width: 9px;
+  height: 9px;
+  background: #666;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main.content div.shoes_content .shoes .shoes_left .shoes_bottom .shoesBtn .pagination > li.focus {
+  background: #c77f40;
 }
 
 main.content div.shoes_content .shoes .shoes_center {
@@ -1684,7 +1778,7 @@ main.content div.shoes_content .shoes .shoes_center .slider_bord dl dt {
 
 main.content div.shoes_content .shoes .shoes_right {
   overflow: hidden;
-  height: 562px;
+  height: 372px;
 }
 
 main.content div.shoes_content .shoes .shoes_right li {

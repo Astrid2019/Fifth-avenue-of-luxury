@@ -90,18 +90,35 @@ for (let i = 0; i < 3; i++) {
 // 主题活动下面
 $("#promotionBottom").on("mouseover", "section", function () {
     var src = $(this).children().children("img")[0].src;
-    src = src.slice(-17,-16)
+    src = src.slice(-17, -16)
     // console.log(src)
-    var imgSrc=`./images/index/${src}bank.jpg`;
+    var imgSrc = `./images/index/${src}bank.jpg`;
     // console.log(imgSrc)
     $(this).children(".topline").css("width", "194px")
     $(this).children(".bottomline").css("width", "194px")
     $(this).children(".rightline").css("height", "65px")
     $(this).children(".leftline").css("height", "65px")
-    $("#promotRight").children().children("img").attr("src",imgSrc);
+    $("#promotRight").children().children("img").attr("src", imgSrc);
 }).on('mouseout', 'section', function () {
     $(this).children(".topline").css("width", 0)
     $(this).children(".bottomline").css("width", 0)
     $(this).children(".rightline").css("height", 0)
     $(this).children(".leftline").css("height", 0)
 })
+
+// 购物中心
+function shopTop(shopLi, shoes_content) {
+    $(`.${shopLi}`).on("mousedown", function () {
+        var shopTop = $(`.${shoes_content}`).offset().top;
+        var aaa =shopTop ;
+        // console.log(aaa)
+        
+        document.documentElement.scrollTop = aaa;
+        document.body.scrollTop = aaa;
+    })
+}
+shopTop("shopLi1", "shoes_content1")
+shopTop("shopLi2", "shoes_content2")
+shopTop("shopLi3", "shoes_content3")
+shopTop("shopLi4", "shoes_content4")
+shopTop("shopLi5", "shoes_content5")

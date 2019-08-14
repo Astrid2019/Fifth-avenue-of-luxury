@@ -2328,6 +2328,7 @@ main.details section.contentTitle .titleRight .gd30tbmi_qrcode {
   color: #666;
   position: relative;
   float: right;
+  cursor: pointer;
 }
 
 main.details section.contentTitle .titleRight .gd30tbmi_qrcode i {
@@ -2492,6 +2493,109 @@ main.details section.goodsMain .goodsConRight > ul > li {
 
 main.details section.goodsMain .goodsConRight > ul > li.goodsBlock {
   display: block;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db {
+  display: block;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike {
+  width: 870px;
+  overflow: hidden;
+  position: relative;
+  height: 370px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike .likeBtn {
+  text-align: right;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike .likeBtn .recommend {
+  font-size: 14px;
+  line-height: 26px;
+  color: #666666;
+  margin-right: 25px;
+  display: inline-block;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike .likeBtn .serialNum {
+  display: inline-block;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike .likeBtn .btn {
+  display: inline-block;
+  cursor: pointer;
+  font-family: "黑体";
+  font-weight: 700;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike > ul {
+  width: 3540px;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  left: 0;
+  top: 51px;
+  -webkit-transition: left .5s;
+  transition: left .5s;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike > ul > li {
+  width: 885px;
+  float: left;
+  overflow: hidden;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike > ul > li > div.list {
+  text-align: center;
+  float: left;
+  font-size: 12px;
+  margin: 0 10px 5px;
+  width: 198px;
+  border: #cccccc solid 1px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike > ul > li > div.list a > div {
+  width: 198px;
+  height: 198px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike > ul > li > div.list a > div > img {
+  width: auto;
+  max-width: 198px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike > ul > li > div.list a > p {
+  line-height: 22px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike > ul > li > div.list a > p:nth-of-type(1) {
+  padding-top: 10px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike > ul > li > div.list a > p:nth-of-type(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike > ul > li > div.list a > p:nth-of-type(3) {
+  padding-bottom: 20px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li.db .whatYouLike > ul > li > div.list a > p:nth-of-type(3) > span {
+  color: #c8a985;
+  font-size: 16px;
+  margin-left: 5px;
+  line-height: 40px;
+  font-weight: bold;
 }
 
 main.details section.goodsMain .goodsConRight > ul > li .product-recommend {
@@ -2694,6 +2798,251 @@ main.details section.goodsMain .goodsConRight > ul > li .common-detail-list .bot
 main.details section.goodsMain .goodsConRight > ul > li .common-detail-list .bot > div > a > img {
   width: 430px;
   height: 321px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li .sizeImg {
+  text-align: left;
+  padding: 10px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li .sizeImg > img {
+  margin-bottom: 20px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con {
+  width: 805px;
+  overflow: hidden;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main {
+  width: 800px;
+  border: 1px solid #d5d5d5;
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_top {
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_top p {
+  margin-left: 10px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_top p .ss_newcomment_red {
+  color: #c30b0b;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content {
+  width: 100%;
+  overflow: hidden;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content .good_comment_left {
+  width: 235px;
+  border-right: 1px solid #d5d5d5;
+  height: 115px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content .good_comment_left > ul {
+  margin-left: 10px;
+  padding-top: 3px;
+  width: 225px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content .good_comment_left > ul > li {
+  width: 225px;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content .good_comment_left > ul > li > p {
+  margin-left: 5px;
+  display: inherit;
+  width: 30px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content .good_comment_left > ul > li .good_comment_bgh {
+  width: 145px;
+  height: 13px;
+  border: 1px solid #585858;
+  overflow: hidden;
+  margin-top: 10px;
+  display: inherit;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content .good_comment_left > ul > li .good_comment_bgh > div {
+  background: #ff7300;
+  height: 13px;
+  overflow: hidden;
+  width: 0;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content .good_comment_right {
+  width: 114px;
+  margin-left: 220px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content .good_comment_right > ul {
+  text-align: center;
+  width: 100px;
+  margin-top: 25px;
+  margin-left: 3px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content .good_comment_right > ul > li {
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content .good_comment_right > ul > li .ss_newcomment_red {
+  color: #c30b0b;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .good_comment_con .good_comment_main .good_comment_content .good_comment_right > ul > li .good_comment_btn {
+  width: 80px;
+  height: 25px;
+  border: 0px;
+  background: url(../images/details/let_comment.png);
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > ul.tab_text_comment {
+  width: 802x;
+  overflow: hidden;
+  border-bottom: 2px solid #000;
+  background: #fff;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > ul.tab_text_comment > li {
+  width: 105px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  border: 1px solid #6A6D69;
+  margin-left: 2px;
+  background: #fff;
+  float: left;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > ul.tab_text_comment > li span {
+  color: #000;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > ul.tab_text_comment > li.tab_noborder {
+  margin-left: 0px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > ul.tab_text_comment > li.check {
+  background: #000;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > ul.tab_text_comment > li.check span {
+  color: #fff;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 {
+  width: 805px;
+  overflow: hidden;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main {
+  width: 805x;
+  overflow: hidden;
+  background: url(../images/details/comment.jpg) no-repeat;
+  height: 213px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_left, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_left {
+  width: 173px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_left .ss_newcomment_main_top, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_left .ss_newcomment_main_top {
+  height: 115px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_left .ss_newcomment_main_top > img, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_left .ss_newcomment_main_top > img {
+  width: 102px;
+  margin: 13px 35px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_left .ss_newcomment_main_text p, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_left .ss_newcomment_main_text p {
+  height: 23px;
+  text-align: center;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_left .ss_newcomment_main_text p.ss_newcomment_red, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_left .ss_newcomment_main_text p.ss_newcomment_red {
+  color: #c30b0b;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_right, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_right {
+  width: 610px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_star, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_star {
+  margin-top: 16px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_star > ul, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_star > ul {
+  overflow: hidden;
+  width: 100%;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_star > ul > li, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_star > ul > li {
+  width: 200px;
+  float: left;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_star > ul > li .ss_newcomment_tex, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_star > ul > li .ss_newcomment_tex {
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_star > ul > li .ss_newcomment_s5, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_star > ul > li .ss_newcomment_s5 {
+  display: block;
+  width: 108px;
+  height: 16px;
+  background: url(../images/details/star.jpg) no-repeat;
+  background-position: 0px -5px;
+  float: left;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_content, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_content {
+  width: 100%;
+  margin-top: 25px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_content ul li, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_content ul li {
+  width: 565px;
+  font-size: 12px;
+  height: 28px;
+  line-height: 16px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_content ul li .ss_newcomment_red, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_content ul li .ss_newcomment_red {
+  color: #c30b0b;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_time, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_time {
+  width: 565px;
+  text-align: right;
+  font-size: 12px;
+  padding-top: 18px;
+}
+
+main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_1 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_time .ss_newcomment_hui, main.details section.goodsMain .goodsConRight > ul > li #oni_box_content .tab > div.tab_data #comment_2 .ss_newcomment_main .ss_newcomment_right .ss_newcomment_time .ss_newcomment_hui {
+  color: #a0a0a0;
 }
 
 main#cart {

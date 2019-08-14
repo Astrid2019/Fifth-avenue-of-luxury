@@ -1085,6 +1085,7 @@ main.details{
                 color: #666;
                 position: relative;
                 float: right;
+                cursor: pointer;
                 i {
                     display: inline-block;
                     width: 25px;
@@ -1234,6 +1235,95 @@ main.details{
                     display: none;
                     &.goodsBlock{
                         display: block;
+                    }
+                    &.db{
+                        display: block; 
+                        .whatYouLike{
+                            width: 870px;
+                            overflow: hidden;
+                            position: relative;
+                            height: 370px;
+                            .likeBtn{
+                                text-align: right;
+                                margin-bottom: 25px;
+                                position: relative;
+                                .recommend{
+                                    font-size: 14px;
+                                    line-height: 26px;
+                                    color: #666666;
+                                    margin-right: 25px;
+                                    display: inline-block;
+                                }
+                                .serialNum{
+                                    display: inline-block;
+                                }
+                                .btn{
+                                    display: inline-block;
+                                    cursor: pointer;
+                                    font-family: "黑体";
+                                    font-weight: 700;
+                                }
+                            }
+                            >ul{
+                                width: 3540px;
+                                text-align: center;
+                                line-height: 50px;
+                                position: absolute;
+                                left:0;
+                                top:51px;
+                                transition: left .5s;
+                                >li{
+                                    width: 885px;
+                                    float: left;
+                                    overflow: hidden;
+                                    >div.list{
+                                        text-align: center;
+                                        float: left;
+                                        font-size: 12px;
+                                        margin: 0 10px 5px;
+                                        width: 198px;
+                                        border: #cccccc solid 1px;
+                                        a{
+                                            >div{
+                                                width: 198px;
+                                                height: 198px;
+                                                >img{
+                                                    width: auto;
+                                                    max-width: 198px;
+                                                }
+                                            }
+                                            >p{
+                                                line-height: 22px;
+                                                &:nth-of-type(1){
+                                                    padding-top: 10px;
+                                                    font-weight: bold;
+                                                    overflow: hidden;
+                                                    text-overflow: ellipsis;
+                                                    white-space: nowrap;
+                                                }
+                                                &:nth-of-type(2){
+                                                    overflow: hidden;
+                                                    text-overflow: ellipsis;
+                                                    white-space: nowrap;
+                                                    padding: 0 10px;
+                                                }
+                                                &:nth-of-type(3){
+                                                    padding-bottom: 20px;
+                                                    >span{
+                                                        color: #c8a985;
+                                                        font-size: 16px;
+                                                        margin-left: 5px;
+                                                        line-height: 40px;
+                                                        font-weight: bold;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
                     }
                     .product-recommend {
                         margin-top: 15px;
@@ -1411,6 +1501,217 @@ main.details{
                                     >img{
                                         width: 430px;
                                         height: 321px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sizeImg{
+                        text-align: left;
+                        padding: 10px;
+                        >img{
+                            margin-bottom: 20px;
+                        }
+                    }
+                    #oni_box_content{
+                        .good_comment_con {
+                            width: 805px;
+                            overflow: hidden;
+                            .good_comment_main {
+                                width: 800px;
+                                border: 1px solid #d5d5d5;
+                                overflow: hidden;
+                                background-color: #f4f4f4;
+                                .good_comment_top {
+                                    height: 30px;
+                                    line-height: 30px;
+                                    vertical-align: middle;
+                                    border-bottom: 1px solid #d5d5d5;
+                                    p {
+                                        margin-left: 10px;
+                                        .ss_newcomment_red {
+                                            color: #c30b0b;
+                                        }
+                                    }
+                                }
+                                .good_comment_content {
+                                    width: 100%;
+                                    overflow: hidden;
+                                    .good_comment_left {
+                                        width: 235px;
+                                        border-right: 1px solid #d5d5d5;
+                                        height: 115px;
+                                        >ul {
+                                            margin-left: 10px;
+                                            padding-top: 3px;
+                                            width: 225px;
+                                            >li {
+                                                width: 225px;
+                                                height: 35px;
+                                                line-height: 35px;
+                                                vertical-align: middle;
+                                                overflow: hidden;
+                                                font-size: 12px;
+                                                >p{
+                                                    margin-left: 5px;
+                                                    display: inherit;
+                                                    width: 30px;
+                                                }
+                                                .good_comment_bgh {
+                                                    width: 145px;
+                                                    height: 13px;
+                                                    border: 1px solid #585858;
+                                                    overflow: hidden;
+                                                    margin-top: 10px;
+                                                    display: inherit;
+                                                    >div{
+                                                        background: #ff7300;
+                                                        height: 13px;
+                                                        overflow: hidden;
+                                                        width: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .good_comment_right {
+                                        width: 114px;
+                                        margin-left: 220px;
+                                        >ul {
+                                            text-align: center;
+                                            width: 100px;
+                                            margin-top: 25px;
+                                            margin-left: 3px;
+                                            >li {
+                                                height: 30px;
+                                                line-height: 30px;
+                                                vertical-align: middle;
+                                                .ss_newcomment_red {
+                                                    color: #c30b0b;
+                                                }
+                                                .good_comment_btn {
+                                                    width: 80px;
+                                                    height: 25px;
+                                                    border: 0px;
+                                                    background: url(../images/details/let_comment.png);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .tab{
+                            >ul.tab_text_comment {
+                                width: 802x;
+                                overflow: hidden;
+                                border-bottom: 2px solid #000;
+                                background: #fff;
+                                >li{
+                                    width: 105px;
+                                    text-align: center;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    cursor: pointer;
+                                    border: 1px solid #6A6D69;
+                                    margin-left: 2px;
+                                    background: #fff;
+                                    float: left;
+                                    span{
+                                        color:#000;
+                                    }
+                                    &.tab_noborder {
+                                        margin-left: 0px;
+                                    }
+                                    &.check {
+                                        background: #000;
+                                        span{
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                            >div.tab_data{
+                                #comment_1,#comment_2 {
+                                    width: 805px;
+                                    overflow: hidden;
+                                    .ss_newcomment_main {
+                                        width: 805x;
+                                        overflow: hidden;
+                                        background: url(../images/details/comment.jpg) no-repeat;
+                                        height: 213px;
+                                        .ss_newcomment_left {
+                                            width: 173px;
+                                            .ss_newcomment_main_top {
+                                                height: 115px;
+                                                >img{
+                                                    width: 102px;
+                                                    margin: 13px 35px;
+                                                }
+                                            }
+                                            .ss_newcomment_main_text{
+                                                p {
+                                                    height: 23px;
+                                                    text-align: center;
+                                                    &.ss_newcomment_red {
+                                                        color: #c30b0b;
+                                                    }
+                                                }
+                                            } 
+                                        }
+                                        .ss_newcomment_right {
+                                            width: 610px;
+                                            .ss_newcomment_star {
+                                                margin-top: 16px;
+                                                >ul {
+                                                    overflow: hidden;
+                                                    width: 100%;
+                                                    >li{
+                                                        width: 200px;
+                                                        float: left;
+                                                        font-size: 12px;
+                                                        height: 22px;
+                                                        line-height: 22px;
+                                                        .ss_newcomment_tex {
+                                                            display: block;
+                                                            float: left;
+                                                            margin-right: 5px;
+                                                        }
+                                                        .ss_newcomment_s5 {
+                                                            display: block;
+                                                            width: 108px;
+                                                            height: 16px;
+                                                            background: url(../images/details/star.jpg) no-repeat;
+                                                            background-position: 0px -5px;
+                                                            float: left;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .ss_newcomment_content {
+                                                width: 100%;
+                                                margin-top: 25px;
+                                                ul li {
+                                                    width: 565px;
+                                                    font-size: 12px;
+                                                    height: 28px;
+                                                    line-height: 16px;
+                                                    .ss_newcomment_red {
+                                                        color: #c30b0b;
+                                                    }
+                                                }
+                                            }
+                                            .ss_newcomment_time {
+                                                width: 565px;
+                                                text-align: right;
+                                                font-size: 12px;
+                                                padding-top: 18px;
+                                                .ss_newcomment_hui {
+                                                    color: #a0a0a0;
+                                                }
+                                            }
+                                            
+                                        }
                                     }
                                 }
                             }

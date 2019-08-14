@@ -56,10 +56,10 @@ $('#rightArrow').on('mouseover', 'li', function () {
 // 品牌旗舰
 $('#brandShip').on('mouseover', 'li', function () {
     // $(this).children(".brand_hide").css("top","0")
-    $(this).children().children().children(".brand_hide").css("top", "0")
+    $(this).find(".brand_hide").css("top", "0")
 
 }).on('mouseout', 'li', function () {
-    $(this).children().children().children(".brand_hide").css("top", "100px")
+    $(this).find(".brand_hide").css("top", "100px")
 })
 
 // 热门旗舰店
@@ -90,7 +90,7 @@ for (let i = 0; i < 3; i++) {
 
 // 主题活动下面
 $("#promotionBottom").on("mouseover", "section", function () {
-    var src = $(this).children().children("img")[0].src;
+    var src = $(this).find("img")[0].src;
     src = src.slice(-17, -16)
     // console.log(src)
     var imgSrc = `./images/index/${src}bank.jpg`;

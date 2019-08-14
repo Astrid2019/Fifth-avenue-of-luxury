@@ -1293,7 +1293,7 @@
                 </div>
             </div>
             <div class="titleRight">
-                <ul class="gd30btmi_swith">
+                <ul class="gd30btmi_swith" id="gd30btmi_swith">
                     <li class="_ed">商品详情<b></b></li>
                     <li>尺寸参照<b></b></li>
                     <li id="comment">商品评价<b></b></li>
@@ -1609,7 +1609,7 @@
                 </div>
             </div>
             <div class="goodsConRight fl">
-                <ul>
+                <ul id="goodsLiContent">
                     <li class="goodsBlock">
                         <!--广告位-->
                         <div class="product-recommend">
@@ -1732,15 +1732,369 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="common-detail-list">
-                            <div class="common-title">
-                                <img src="../images/details/you_may_also_like.jpg" alt="关于第五大道">
+                    </li>
+                    <li>
+                        <div class="sizeImg">
+                            <img src="../images/details/size_pic1.jpg" alt="">
+                            <img src="../images/details/size_pic2.jpg" alt="">
+                            <img src="../images/details/size_pic3.jpg" alt="">
+                            <img src="../images/details/size_pic4.jpg" alt="">
+                            <img src="../images/details/size_pic5.jpg" alt="">
+                            <img src="../images/details/size_pic6.jpg" alt="">
+                            <img src="../images/details/size_pic7.jpg" alt="">
+                            <img src="../images/details/size_pic8.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div id="oni_box_content">
+                            <div class="good_comment_con">
+                                <div class="good_comment_main">
+                                    <!--good_comment_main start-->
+                                    <div class="good_comment_top">
+                                        <!--good_comment_top start-->
+                                        <p class="fsize12">商品评论(共<span class="ss_newcomment_red">1</span>名用户参与)</p>
+                                    </div>
+                                    <!--good_comment_top end-->
+
+                                    <div class="good_comment_content">
+                                        <div class="fl good_comment_left">
+                                            <ul>
+                                                <li>
+                                                    <p class="fl">好评</p>
+                                                    <div class="fl good_comment_bgh">
+                                                        <div style="width: 100%;"> </div>
+                                                    </div>
+                                                    <p class="fl">100%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="fl">中评</p>
+                                                    <div class="fl good_comment_bgh">
+                                                        <div style="width: 0%;"> </div>
+                                                    </div>
+                                                    <p class="fl">0%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="fl">差评</p>
+                                                    <div class="fl good_comment_bgh">
+                                                        <div style="width: 0%;"> </div>
+                                                    </div>
+                                                    <p class="fl">0%</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="fl  good_comment_right" style="margin-left:220px;">
+                                            <ul>
+                                                <li><span class="fsize12 ss_newcomment_red">我已购买过此产品</span></li>
+                                                <li>
+                                                    <!-- <input value="" type="button" class="good_comment_btn"/> -->
+                                                    <a href="javascript:;">
+                                                        <div class="good_comment_btn"> </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--good_comment_main end-->
+                            </div>
+                            <div class="tab">
+                                <ul class="tab_text_comment">
+                                    <li class="tab_noborder check" data="#comment_1"><span>最新评论(1)</span></li>
+                                    <li data="#comment_2" class=""><span>好评(1)</span></li>
+                                    <li data="#comment_3" class=""><span>中评(0)</span></li>
+                                    <li data="#comment_4" style="background-image:none" class=""><span>差评(0)</span></li>
+                                </ul>
+                                <div class="tab_data">
+                                    <div id="comment_1">
+                                        <div id="ss_newcomment_con">
+                                            <div class="ss_newcomment_main">
+                                                <!--ss_newcomment_main start-->
+                                                <div class="fl ss_newcomment_left">
+                                                    <div class="ss_newcomment_main_top"><img
+                                                            src="../images/details/header.jpg"></div>
+                                                    <div class="ss_newcomment_main_text">
+                                                        <p class="fsize12 ss_newcomment_red">1****4</p>
+                                                        <p class="fsize12">红卡会员</p>
+                                                    </div>
+                                                </div>
+                                                <div class="fr ss_newcomment_right">
+                                                    <!--ss_newcomment_right start-->
+                                                    <div class="ss_newcomment_star">
+                                                        <!--ss_newcomment_star start-->
+                                                        <ul>
+                                                            <li><span class="ss_newcomment_tex">商品满意度</span><span
+                                                                    class="ss_newcomment_s5"></span></li>
+                                                            <li><span class="ss_newcomment_tex">客服满意度</span><span
+                                                                    class="ss_newcomment_s5"></span></li>
+                                                            <li><span class="ss_newcomment_tex">物流满意度</span><span
+                                                                    class="ss_newcomment_s5"></span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--ss_newcomment_star end-->
+                                                    <div class="ss_newcomment_content">
+                                                        <!--ss_newcomment_content start-->
+                                                        <ul>
+                                                            <!-- <li>颜色：&nbsp;<span class="ss_newcomment_hui">蓝色系</span></li> -->
+                                                            <li>
+                                                                <span class="ss_newcomment_red">评价：</span>
+                                                                <span>保湿效果很好，超级棒，下次再购买！</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--ss_newcomment_content end-->
+                                                    <div class="ss_newcomment_time">
+                                                        <span class="ss_newcomment_hui">评论时间：2018/11/13</span>
+                                                    </div>
+                                                </div>
+                                                <!--ss_newcomment_right end-->
+                                            </div>
+                                            <!--ss_newcomment_main end-->
+                                        </div>
+                                    </div>
+                                    <div id="comment_2" style="display: none;">
+                                        <div id="ss_newcomment_con">
+                                            <div class="ss_newcomment_main">
+                                                <!--ss_newcomment_main start-->
+                                                <div class="fl ss_newcomment_left">
+                                                    <div class="ss_newcomment_main_top"><img
+                                                            src="../images/details/header.jpg"></div>
+                                                    <div class="ss_newcomment_main_text">
+                                                        <p class="fsize12 ss_newcomment_red">13929021964</p>
+                                                        <p class="fsize12">红卡会员</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fr ss_newcomment_right">
+                                                    <!--ss_newcomment_right start-->
+                                                    <div class="ss_newcomment_star">
+                                                        <!--ss_newcomment_star start-->
+                                                        <ul>
+                                                            <li><span class="ss_newcomment_tex">商品满意度</span><span
+                                                                    class="ss_newcomment_s5"></span></li>
+                                                            <li><span class="ss_newcomment_tex">客服满意度</span><span
+                                                                    class="ss_newcomment_s5"></span></li>
+                                                            <li><span class="ss_newcomment_tex">物流满意度</span><span
+                                                                    class="ss_newcomment_s5"></span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--ss_newcomment_star end-->
+                                                    <div class="ss_newcomment_content">
+                                                        <!--ss_newcomment_content start-->
+                                                        <ul>
+                                                            <!-- <li>颜色：&nbsp;<span class="ss_newcomment_hui">蓝色系</span></li> -->
+                                                            <li>
+                                                                <span class="ss_newcomment_red">评价：</span>
+                                                                <span>保湿效果很好，超级棒，下次再购买！</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--ss_newcomment_content end-->
+                                                    <div class="ss_newcomment_time">
+                                                        <span class="ss_newcomment_hui">评论时间：2018/11/13</span>
+                                                    </div>
+                                                </div>
+                                                <!--ss_newcomment_right end-->
+                                            </div>
+                                            <!--ss_newcomment_main end-->
+                                        </div>
+                                    </div>
+                                    <div id="comment_3" style="display: none;">
+                                        <div id="ss_newcomment_con"></div>
+                                    </div>
+
+                                    <div id="comment_4" style="display: none;">
+                                        <div id="ss_newcomment_con"></div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
                     </li>
-                    <li></li>
-                    <li></li>
+                    <li class="db">
+                        <div class="common-detail-list">
+                            <div class="common-title">
+                                <img src="../images/details/you_may_also_like.jpg" alt="关于第五大道">
+                            </div>
+                        </div>
+                        <div class="whatYouLike">
+                            <div class="likeBtn">
+                                <p class="recommend">根据第五大道购物大数据为您推荐</p>
+                                <div class="btn prev">&lt;</div>
+                                <p class="serialNum"><span class="serialSpan">1</span>/<span>3</span></p>
+                                <div class="btn next">&gt;</div>
+                            </div>
+                            <ul class="clearfix guessYouLike">
+                                <li>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic1.jpg" alt="">
+                                            </div>
+                                            <p>Louis Vuitton/LV路易.威登</p>
+                                            <p>咖啡色Monogram帆布女士手提肩背迷你手袋 M53152</p>
+                                            <p><span>￥ 8740</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic2.jpg" alt="">
+                                            </div>
+                                            <p>Diesel迪赛</p>
+                                            <p>象牙色叶纹印花LOGO环保购物袋（处理）</p>
+                                            <p><span>￥ 690</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic3.jpg" alt="">
+                                            </div>
+                                            <p>Kate Spade凯特.丝蓓</p>
+                                            <p>Kate Spade 凯特·丝蓓 绿色插绘人物Charm纽约手提袋</p>
+                                            <p><span>￥ 2550</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic4.jpg" alt="">
+                                            </div>
+                                            <p>Gucci古驰</p>
+                                            <p>卡其色PVC双G星星印花女士手提包 309498</p>
+                                            <p><span>￥ 5999</span></p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic2.jpg" alt="">
+                                            </div>
+                                            <p>Louis Vuitton/LV路易.威登</p>
+                                            <p>咖啡色Monogram帆布女士手提肩背迷你手袋 M53152</p>
+                                            <p><span>￥ 8740</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic1.jpg" alt="">
+                                            </div>
+                                            <p>Diesel迪赛</p>
+                                            <p>象牙色叶纹印花LOGO环保购物袋（处理）</p>
+                                            <p><span>￥ 690</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic3.jpg" alt="">
+                                            </div>
+                                            <p>Kate Spade凯特.丝蓓</p>
+                                            <p>Kate Spade 凯特·丝蓓 绿色插绘人物Charm纽约手提袋</p>
+                                            <p><span>￥ 2550</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic4.jpg" alt="">
+                                            </div>
+                                            <p>Gucci古驰</p>
+                                            <p>卡其色PVC双G星星印花女士手提包 309498</p>
+                                            <p><span>￥ 5999</span></p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic4.jpg" alt="">
+                                            </div>
+                                            <p>Louis Vuitton/LV路易.威登</p>
+                                            <p>咖啡色Monogram帆布女士手提肩背迷你手袋 M53152</p>
+                                            <p><span>￥ 8740</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic2.jpg" alt="">
+                                            </div>
+                                            <p>Diesel迪赛</p>
+                                            <p>象牙色叶纹印花LOGO环保购物袋（处理）</p>
+                                            <p><span>￥ 690</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic3.jpg" alt="">
+                                            </div>
+                                            <p>Kate Spade凯特.丝蓓</p>
+                                            <p>Kate Spade 凯特·丝蓓 绿色插绘人物Charm纽约手提袋</p>
+                                            <p><span>￥ 2550</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic1.jpg" alt="">
+                                            </div>
+                                            <p>Gucci古驰</p>
+                                            <p>卡其色PVC双G星星印花女士手提包 309498</p>
+                                            <p><span>￥ 5999</span></p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic1.jpg" alt="">
+                                            </div>
+                                            <p>Louis Vuitton/LV路易.威登</p>
+                                            <p>咖啡色Monogram帆布女士手提肩背迷你手袋 M53152</p>
+                                            <p><span>￥ 8740</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic2.jpg" alt="">
+                                            </div>
+                                            <p>Diesel迪赛</p>
+                                            <p>象牙色叶纹印花LOGO环保购物袋（处理）</p>
+                                            <p><span>￥ 690</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic3.jpg" alt="">
+                                            </div>
+                                            <p>Kate Spade凯特.丝蓓</p>
+                                            <p>Kate Spade 凯特·丝蓓 绿色插绘人物Charm纽约手提袋</p>
+                                            <p><span>￥ 2550</span></p>
+                                        </a>
+                                    </div>
+                                    <div class="list">
+                                        <a href="javascript:;">
+                                            <div>
+                                                <img src="../images/details/like_pic4.jpg" alt="">
+                                            </div>
+                                            <p>Gucci古驰</p>
+                                            <p>卡其色PVC双G星星印花女士手提包 309498</p>
+                                            <p><span>￥ 5999</span></p>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -1883,6 +2237,8 @@
     <script src="../lib/jquery-3.4.1.min.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/other.js"></script>
+    <script src="../js/aaa.js"></script>
+    <script src="../js/goodsSlider.js"></script>
 
 </body>
 

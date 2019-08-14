@@ -31,12 +31,12 @@ $("#regisLabel").on("click", function () {
     console.log(isTrue)
     setTimeout(function () {
         if (!isTrue) {
-        $(".confirmI").css("display", "none");
-        $("#register").addClass("can-sub")
-    } else {
-        $(".confirmI").css("display", "inline-block")
-        $("#register").removeClass("can-sub")
-    }
+            $(".confirmI").css("display", "none");
+            $("#register").addClass("can-sub")
+        } else {
+            $(".confirmI").css("display", "inline-block")
+            $("#register").removeClass("can-sub")
+        }
     }, 200)
 })
 
@@ -44,17 +44,53 @@ $("#regisLabel").on("click", function () {
 // 商品详情页面
 // 加减
 
-$("#reducenum").on("click",function(){
+$("#reducenum").on("click", function () {
     var numValue = $("#number").val();
-    if(numValue>1){
+    if (numValue > 1) {
         numValue--
     }
     $("#number").val(numValue);
 })
-$("#addnum").on("click",function(){
+$("#addnum").on("click", function () {
     var numValue = $("#number").val();
-    if(numValue<100){
+    if (numValue < 100) {
         numValue++
     }
     $("#number").val(numValue);
+})
+
+// 商品详情页面三个按钮点击切换
+
+// var lis = $("#gd30btmi_swith>li");
+// console.log(lis.length)
+
+$(function () {
+    for (let i = 0; i < 3; i++) {
+        $("#gd30btmi_swith>li").eq(i).attr("p-from", i);
+
+        $("#gd30btmi_swith>li").eq(i).on("click", function () {
+            var index = $("#gd30btmi_swith li").eq(i).attr("p-from");
+            // console.log(index)
+
+            $("#goodsLiContent>li.goodsBlock").removeClass("goodsBlock")
+            $("#goodsLiContent>li").eq(index).addClass("goodsBlock")
+
+            $("#gd30btmi_swith>li._ed").removeClass("_ed");
+            $("#gd30btmi_swith>li").eq(index).addClass("_ed")
+
+        })
+    }
+})
+
+$(function () {
+    $("ul.tab_text_comment li").on("click", function () {
+        name = $(this).attr("data");
+        $(this).addClass("check");
+        $(this).siblings().removeClass("check");
+
+        $(name).css("display", "block");
+
+        $(name).siblings().css("display", "none");
+
+    })
 })

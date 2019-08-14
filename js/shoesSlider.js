@@ -83,3 +83,5 @@ shoes("classicBags","bagsBtn");
 shoes("accessSlider","accessBtn");
 shoes("cosmSlider","cosmBtn");
 shoes("apparelSlider","apparelBtn");
+shoes("guessYouLike","likeBtn");
+

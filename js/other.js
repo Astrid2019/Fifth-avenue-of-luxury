@@ -38,5 +38,23 @@ $("#regisLabel").on("click", function () {
         $("#register").removeClass("can-sub")
     }
     }, 200)
-    
+})
+
+
+// 商品详情页面
+// 加减
+
+$("#reducenum").on("click",function(){
+    var numValue = $("#number").val();
+    if(numValue>1){
+        numValue--
+    }
+    $("#number").val(numValue);
+})
+$("#addnum").on("click",function(){
+    var numValue = $("#number").val();
+    if(numValue<100){
+        numValue++
+    }
+    $("#number").val(numValue);
 })

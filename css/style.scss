@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "./base";
+@import "./header";
 @import "./footer";
 footer {
 	height: 600px;
@@ -739,9 +740,10 @@ main.details{
                         height: 30px;
                         position: relative;
                         margin-top: 6px;
-                        cursor: pointer;                      
+                        cursor: pointer;                    
                         img{
-                            display: none;
+                            width: 0;
+                            height: 0;
                             position: absolute;
                             left: 0px;
                             top: 30px;
@@ -770,6 +772,11 @@ main.details{
                         }
                         &:hover b{
                             background: url(../images/details/tArr.png) no-repeat;
+                        }
+                        &:hover img{
+                            width: 119px;
+                            height: 119px;
+                            transition: all .3s;
                         }
                     }
 
@@ -1108,7 +1115,6 @@ main.details{
                     z-index: 1;
                     background: white;
                     border: 1px solid #c9c9c9;
-
                     >span {
                         color: #949494;
                         padding: 2px 2px;

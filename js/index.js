@@ -35,6 +35,7 @@ $("#classify").mouseover(function () {
     $(".drop_down").css("display", "none");
     $("#masking").removeClass("masking")
 })
+
 $('#rightArrow').on('mouseover', 'li', function () {
     $(this).css({
         opacity: 1,

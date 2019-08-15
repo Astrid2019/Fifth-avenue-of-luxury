@@ -94,3 +94,82 @@ $(function () {
 
     })
 })
+
+// 详情页面点击小图切换大图
+$("#smallImgList li").click(function () {
+    var src = $(this).find("img").attr("src");
+    src = src.slice(-5, -4)
+    console.log(src)
+    newSrc = `../images/details/prod_pic${src}.jpg`
+    $("#bigImg").attr("src", newSrc)
+    $("#rightImg").attr("src", newSrc)
+    $("#floatImg").attr("src", newSrc)
+})
+
+
+// 放大镜
+$(function () {
+    var left = $('.img');
+    var float = $('.img .float');
+    var mask = $(".mask");
+    var img = $('.img>img');
+    var right = $('.rightBigImg')
+    left.on("mousemove", function (evt) {
+
+        var x = evt.offsetX;
+        var y = evt.offsetY;
+        // console.log(x)
+        // console.log(y)
+        x = x - float[0].offsetWidth / 2;
+        y = y - float[0].offsetHeight / 2;
+        // console.log(x)
+        // console.log(y)
+        if (x < 0) {
+            x = 0;
+        }
+        if (y < 0) {
+            y = 0;
+        }
+
+        if (x > img[0].offsetWidth - float[0].offsetWidth) {
+            x = img[0].offsetWidth - float[0].offsetWidth
+        }
+
+        if (y > img[0].offsetHeight - float[0].offsetHeight) {
+            y = img[0].offsetHeight - float[0].offsetHeight
+        }
+        float.css({
+            "left": `${x}px`,
+            "top": `${y}px`
+        })
+        float.find("#floatImg").css({
+            "left": `-${x+3}px`,
+            "top": `-${y+3}px`
+        })
+
+        right.find("#rightImg").css({
+            "left": `${-1.5 * x}px`,
+            "top": `${-1.5 * y}px`
+        })
+    })
+
+    left.on("mouseover", function () {
+        float.css("display", "block")
+        mask.css("display", "block")
+        right.css("display", "block")
+    }).on("mouseout", function () {
+        float.css("display", "none")
+        mask.css("display", "none")
+        right.css("display", "none")
+    })
+
+    // left.on("mouseover" , function () {
+    //     float.css("display","block")
+    //     right.css("display","block")
+    // })
+
+    // left.on("mouseout" , function () {
+    //     float.css("display","none")
+    //     right.css("display","none")
+    // })
+})
